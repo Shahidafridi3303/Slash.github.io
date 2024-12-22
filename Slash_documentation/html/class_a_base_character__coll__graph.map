@@ -1,0 +1,13 @@
+<map id="ABaseCharacter" name="ABaseCharacter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="105,248,222,275"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,157,93,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,192,149,245,146,250,76,196"/>
+<area shape="rect" id="Node000003" href="$class_i_hit_interface.html" title=" " alt="" coords="117,157,210,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,200,166,247,161,247,161,200"/>
+<area shape="rect" id="Node000004" href="$class_a_weapon.html" title=" " alt="" coords="235,157,311,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,196,181,249,178,245,244,192"/>
+<area shape="rect" id="Node000005" href="$class_a_item.html" title=" " alt="" coords="245,81,301,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="276,123,276,157,270,157,270,123"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="242,5,304,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="276,47,276,81,270,81,270,47"/>
+</map>

@@ -1,0 +1,28 @@
+\doxysection{Treasure.\+h}
+\hypertarget{_treasure_8h_source}{}\label{_treasure_8h_source}\index{Public/Items/Treasure.h@{Public/Items/Treasure.h}}
+\mbox{\hyperlink{_treasure_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_item_8h}{Items/Item.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Treasure.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_treasure}{ATreasure}}\ :\ public\ \mbox{\hyperlink{class_a_item}{AItem}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ OnSphereOverlap(UPrimitiveComponent*\ OverlappedComponent,\ AActor*\ OtherActor,\ UPrimitiveComponent*\ OtherComp,\ int32\ OtherBodyIndex,\ \textcolor{keywordtype}{bool}\ bFromSweep,\ \textcolor{keyword}{const}\ FHitResult\&\ SweepResult)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}Treasure\ Properties"{}})}
+\DoxyCodeLine{00022\ \ \ \ \ int32\ Gold;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ FORCEINLINE\ int32\ \mbox{\hyperlink{class_a_treasure_a6196b96896296d868a796abcd68b9e95}{GetGold}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Gold;\ \}}
+\DoxyCodeLine{00025\ \};}
+
+\end{DoxyCode}

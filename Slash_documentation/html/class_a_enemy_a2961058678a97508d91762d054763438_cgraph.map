@@ -1,0 +1,9 @@
+<map id="AEnemy::GetHit_Implementation" name="AEnemy::GetHit_Implementation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,219,73"/>
+<area shape="rect" id="Node000002" href="$class_a_base_character.html#a2a5e8c823d81821609bcd1b956c3a457" title=" " alt="" coords="267,5,459,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,43,251,39,252,44,218,49"/>
+<area shape="rect" id="Node000004" href="$class_a_base_character.html#af91f253a0db9a438bac5ed95320a0fe1" title=" " alt="" coords="268,72,458,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,71,252,76,252,81,217,77"/>
+<area shape="rect" id="Node000003" href="$class_a_weapon.html#ac12a8834711db517a4e9c5e3f319dbca" title=" " alt="" coords="507,13,682,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="459,24,491,24,491,29,459,29"/>
+</map>

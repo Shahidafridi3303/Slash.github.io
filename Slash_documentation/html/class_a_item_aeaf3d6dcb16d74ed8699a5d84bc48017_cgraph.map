@@ -1,0 +1,5 @@
+<map id="AItem::Tick" name="AItem::Tick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,95,32"/>
+<area shape="rect" id="Node000002" href="$class_a_item.html#a12f18465da5db0a31ae0798a8961d2e7" title=" " alt="" coords="143,5,299,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,16,127,16,127,21,95,21"/>
+</map>

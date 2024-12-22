@@ -1,0 +1,112 @@
+\doxysection{Slash\+Character.\+h}
+\hypertarget{_slash_character_8h_source}{}\label{_slash_character_8h_source}\index{Public/Characters/SlashCharacter.h@{Public/Characters/SlashCharacter.h}}
+\mbox{\hyperlink{_slash_character_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_base_character_8h}{BaseCharacter.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_types_8h}{CharacterTypes.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pickup_interface_8h}{Interfaces/PickupInterface.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}SlashCharacter.generated.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }USpringArmComponent;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }UCameraComponent;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }UGroomComponent;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_item}{AItem}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_soul}{ASoul}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_treasure}{ATreasure}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }UAnimMontage;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_slash_overlay}{USlashOverlay}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ UCLASS()}
+\DoxyCodeLine{00021\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_slash_character}{ASlashCharacter}}\ :\ public\ \mbox{\hyperlink{class_a_base_character}{ABaseCharacter}},\ public\ \mbox{\hyperlink{class_i_pickup_interface}{IPickupInterface}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_a_slash_character}{ASlashCharacter}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetupPlayerInputComponent(\textcolor{keyword}{class}\ UInputComponent*\ PlayerInputComponent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Jump()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ TakeDamage(\textcolor{keywordtype}{float}\ DamageAmount,\ \textcolor{keyword}{struct}\ FDamageEvent\ \textcolor{keyword}{const}\&\ DamageEvent,\ \textcolor{keyword}{class}\ AController*\ EventInstigator,\ AActor*\ DamageCauser)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ GetHit\_Implementation(\textcolor{keyword}{const}\ FVector\&\ ImpactPoint,\ AActor*\ Hitter)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ SetOverlappingItem(\mbox{\hyperlink{class_a_item}{AItem}}*\ Item)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ AddSoulsAndHealth(\mbox{\hyperlink{class_a_soul}{ASoul}}*\ Soul)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ AddGold(\mbox{\hyperlink{class_a_treasure}{ATreasure}}*\ Treasure);}
+\DoxyCodeLine{00036\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ MoveForward(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ MoveRight(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ Turn(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ LookUp(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ EKeyPressed();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Attack()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ Dodge();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ EquipWeapon(\mbox{\hyperlink{class_a_weapon}{AWeapon}}*\ Weapon);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ AttackEnd()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ DodgeEnd()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ CanAttack()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ CanDisarm();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ CanArm();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ Disarm();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ Arm();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ PlayEquipMontage(\textcolor{keyword}{const}\ FName\&\ SectionName);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Die\_Implementation()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsOccupied();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ HasEnoughStamina();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ AttachWeaponToBack();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ AttachWeaponToHand();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ FinishEquipping();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ HitReactEnd();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsUnoccupied();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ InitializeSlashOverlay();}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ SetHUDHealth();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00081\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00082\ \ \ \ \ USpringArmComponent*\ CameraBoom;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00085\ \ \ \ \ UCameraComponent*\ ViewCamera;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ Category\ =\ Hair)}
+\DoxyCodeLine{00088\ \ \ \ \ UGroomComponent*\ Hair;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ Category\ =\ Hair)}
+\DoxyCodeLine{00091\ \ \ \ \ UGroomComponent*\ Eyebrows;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ UPROPERTY(VisibleInstanceOnly)}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{class_a_item}{AItem}}*\ OverlappingItem;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ Montages)}
+\DoxyCodeLine{00097\ \ \ \ \ UAnimMontage*\ EquipMontage;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{_character_types_8h_a1eee02477e4d3ad60fece0fbf612fdd5}{ECharacterState}}\ CharacterState\ =\ ECharacterState::ECS\_Unequipped;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ meta\ =\ (AllowPrivateAccess\ =\ \textcolor{stringliteral}{"{}true"{}}))}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{_character_types_8h_af76f1f4260f27f698f264beecbd387d9}{EActionState}}\ ActionState\ =\ EActionState::EAS\_Unoccupied;}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{class_u_slash_overlay}{USlashOverlay}}*\ SlashOverlay;}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00108\ \ \ \ \ FORCEINLINE\ \mbox{\hyperlink{_character_types_8h_a1eee02477e4d3ad60fece0fbf612fdd5}{ECharacterState}}\ \mbox{\hyperlink{class_a_slash_character_a874e3a910e0c5b0b4043071a7a2f66f1}{GetCharacterState}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ CharacterState;\ \}}
+\DoxyCodeLine{00109\ \ \ \ \ FORCEINLINE\ \mbox{\hyperlink{_character_types_8h_af76f1f4260f27f698f264beecbd387d9}{EActionState}}\ \mbox{\hyperlink{class_a_slash_character_a01943898bef27d36fd213f1fb9bede7f}{GetActionState}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ActionState;\ \}}
+\DoxyCodeLine{00110\ \};}
+
+\end{DoxyCode}

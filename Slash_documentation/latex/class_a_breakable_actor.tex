@@ -1,0 +1,103 @@
+\doxysection{ABreakable\+Actor Class Reference}
+\hypertarget{class_a_breakable_actor}{}\label{class_a_breakable_actor}\index{ABreakableActor@{ABreakableActor}}
+
+
+{\ttfamily \#include $<$Breakable\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for ABreakable\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_a_breakable_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ABreakable\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_a_breakable_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_breakable_actor_a80d431f2799523d4e6168d2c820eedb8}{ABreakable\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_breakable_actor_ad4ee71188cbb3a4f24f28d4b1707b50f}{Tick}} (float Delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_breakable_actor_aa1421bc211dd606574ec06b0fe181452}{Get\+Hit\+\_\+\+Implementation}} (const FVector \&Impact\+Point, AActor \texorpdfstring{$\ast$}{*}Hitter) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_hit_interface}{IHit\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_i_hit_interface_ac535bfda69dd3ee9bddc613326a6880e}{Get\+Hit}} (const FVector \&Impact\+Point, AActor \texorpdfstring{$\ast$}{*}Hitter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_breakable_actor_a958589986dedf4b679e2548fa92dd056}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+UGeometry\+Collection\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_breakable_actor_a2dacbbcda7852e05df48f63d3d78a5e6}{Geometry\+Collection}}
+\item 
+class UCapsule\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_breakable_actor_aa010e16f486fd563666308f56c6a9ebf}{Capsule}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_breakable_actor_a80d431f2799523d4e6168d2c820eedb8}\index{ABreakableActor@{ABreakableActor}!ABreakableActor@{ABreakableActor}}
+\index{ABreakableActor@{ABreakableActor}!ABreakableActor@{ABreakableActor}}
+\doxysubsubsection{\texorpdfstring{ABreakableActor()}{ABreakableActor()}}
+{\footnotesize\ttfamily \label{class_a_breakable_actor_a80d431f2799523d4e6168d2c820eedb8} 
+ABreakable\+Actor\+::\+ABreakable\+Actor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_breakable_actor_a958589986dedf4b679e2548fa92dd056}\index{ABreakableActor@{ABreakableActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ABreakableActor@{ABreakableActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_breakable_actor_a958589986dedf4b679e2548fa92dd056} 
+void ABreakable\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_breakable_actor_aa1421bc211dd606574ec06b0fe181452}\index{ABreakableActor@{ABreakableActor}!GetHit\_Implementation@{GetHit\_Implementation}}
+\index{GetHit\_Implementation@{GetHit\_Implementation}!ABreakableActor@{ABreakableActor}}
+\doxysubsubsection{\texorpdfstring{GetHit\_Implementation()}{GetHit\_Implementation()}}
+{\footnotesize\ttfamily \label{class_a_breakable_actor_aa1421bc211dd606574ec06b0fe181452} 
+void ABreakable\+Actor\+::\+Get\+Hit\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{const FVector \&}]{Impact\+Point}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Hitter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_breakable_actor_ad4ee71188cbb3a4f24f28d4b1707b50f}\index{ABreakableActor@{ABreakableActor}!Tick@{Tick}}
+\index{Tick@{Tick}!ABreakableActor@{ABreakableActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_breakable_actor_ad4ee71188cbb3a4f24f28d4b1707b50f} 
+void ABreakable\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_breakable_actor_aa010e16f486fd563666308f56c6a9ebf}\index{ABreakableActor@{ABreakableActor}!Capsule@{Capsule}}
+\index{Capsule@{Capsule}!ABreakableActor@{ABreakableActor}}
+\doxysubsubsection{\texorpdfstring{Capsule}{Capsule}}
+{\footnotesize\ttfamily \label{class_a_breakable_actor_aa010e16f486fd563666308f56c6a9ebf} 
+class UCapsule\+Component\texorpdfstring{$\ast$}{*} ABreakable\+Actor\+::\+Capsule\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_breakable_actor_a2dacbbcda7852e05df48f63d3d78a5e6}\index{ABreakableActor@{ABreakableActor}!GeometryCollection@{GeometryCollection}}
+\index{GeometryCollection@{GeometryCollection}!ABreakableActor@{ABreakableActor}}
+\doxysubsubsection{\texorpdfstring{GeometryCollection}{GeometryCollection}}
+{\footnotesize\ttfamily \label{class_a_breakable_actor_a2dacbbcda7852e05df48f63d3d78a5e6} 
+UGeometry\+Collection\+Component\texorpdfstring{$\ast$}{*} ABreakable\+Actor\+::\+Geometry\+Collection\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Breakable\+Actor/\mbox{\hyperlink{_breakable_actor_8h}{Breakable\+Actor.\+h}}\item 
+Private/\+Breakable\+Actor/\mbox{\hyperlink{_breakable_actor_8cpp}{Breakable\+Actor.\+cpp}}\end{DoxyCompactItemize}

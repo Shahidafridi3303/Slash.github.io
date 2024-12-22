@@ -1,0 +1,119 @@
+\doxysection{ATreasure Class Reference}
+\hypertarget{class_a_treasure}{}\label{class_a_treasure}\index{ATreasure@{ATreasure}}
+
+
+{\ttfamily \#include $<$Treasure.\+h$>$}
+
+
+
+Inheritance diagram for ATreasure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_a_treasure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ATreasure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_a_treasure__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+FORCEINLINE int32 \mbox{\hyperlink{class_a_treasure_a6196b96896296d868a796abcd68b9e95}{Get\+Gold}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_item}{AItem}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_item_a8650f2d2897644f787e593d09643baf2}{AItem}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_item_aeaf3d6dcb16d74ed8699a5d84bc48017}{Tick}} (float Delta\+Time) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_treasure_a8a7a2edee4755648d0345993a0e13680}{On\+Sphere\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const FHit\+Result \&Sweep\+Result) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_a_item}{AItem}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_item_ab11b1af717ab700069f202507d36b5c4}{Begin\+Play}} () override
+\item 
+float \mbox{\hyperlink{class_a_item_a12f18465da5db0a31ae0798a8961d2e7}{Transformed\+Sin}} ()
+\item 
+float \mbox{\hyperlink{class_a_item_a79219393795df4fd87cc801b847ed36f}{Transformed\+Cos}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_a_item_ac70b71672309f932e5f7db2f9945560c}{Avg}} (T First, T Second)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_ab916a2fafac02d2830ab1e13ef18349f}{On\+Sphere\+End\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_a9d3ba60108ef0f89a2220b7168b1dd2d}{Spawn\+Pickup\+System}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_item_a27ea62ef3cb331e391b074eab0f0f011}{Spawn\+Pickup\+Sound}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_a_item}{AItem}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_a_item_af21b47e36b57aa0176ca7f7ca11c92f1}{Amplitude}} = 0.\+25f
+\item 
+float \mbox{\hyperlink{class_a_item_a7197403611d8f480fd773219f1dbc9f8}{Time\+Constant}} = 5.f
+\item 
+UStatic\+Mesh\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_aaaca39d378cd03f9eb8d0c262ca02c7a}{Item\+Mesh}}
+\item 
+\mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItem\+State}} \mbox{\hyperlink{class_a_item_ab2f7e6ae59b093c02be5eda9da6bd038}{Item\+State}} = \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264afaa26f56bc8a0dc30cc11e09b01f2b11}{EItem\+State\+::\+EIS\+\_\+\+Hovering}}
+\item 
+USphere\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_a9fb72b55d6d173f24c39a8d385a5b514}{Sphere}}
+\item 
+UNiagara\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_ae1dcd8a17f44b143caa57ec35c4878f0}{Item\+Effect}}
+\item 
+USound\+Base \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_a71ec90be58bc271225ca4f8c59e03200}{Pickup\+Sound}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_treasure_a6196b96896296d868a796abcd68b9e95}\index{ATreasure@{ATreasure}!GetGold@{GetGold}}
+\index{GetGold@{GetGold}!ATreasure@{ATreasure}}
+\doxysubsubsection{\texorpdfstring{GetGold()}{GetGold()}}
+{\footnotesize\ttfamily \label{class_a_treasure_a6196b96896296d868a796abcd68b9e95} 
+FORCEINLINE int32 ATreasure\+::\+Get\+Gold (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_treasure_a6196b96896296d868a796abcd68b9e95_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_treasure_a8a7a2edee4755648d0345993a0e13680}\index{ATreasure@{ATreasure}!OnSphereOverlap@{OnSphereOverlap}}
+\index{OnSphereOverlap@{OnSphereOverlap}!ATreasure@{ATreasure}}
+\doxysubsubsection{\texorpdfstring{OnSphereOverlap()}{OnSphereOverlap()}}
+{\footnotesize\ttfamily \label{class_a_treasure_a8a7a2edee4755648d0345993a0e13680} 
+void ATreasure\+::\+On\+Sphere\+Overlap (\begin{DoxyParamCaption}\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Overlapped\+Component}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Other\+Actor}{, }\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Other\+Comp}{, }\item[{int32}]{Other\+Body\+Index}{, }\item[{bool}]{b\+From\+Sweep}{, }\item[{const FHit\+Result \&}]{Sweep\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_item_adc27429329700e7475fadb6141ef6af8}{AItem}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_treasure_a8a7a2edee4755648d0345993a0e13680_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Items/\mbox{\hyperlink{_treasure_8h}{Treasure.\+h}}\item 
+Private/\+Items/\mbox{\hyperlink{_treasure_8cpp}{Treasure.\+cpp}}\end{DoxyCompactItemize}

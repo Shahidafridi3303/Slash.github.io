@@ -1,0 +1,70 @@
+\doxysection{Weapon.\+h}
+\hypertarget{_weapon_8h_source}{}\label{_weapon_8h_source}\index{Public/Items/Weapons/Weapon.h@{Public/Items/Weapons/Weapon.h}}
+\mbox{\hyperlink{_weapon_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_item_8h}{Items/Item.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Weapon.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }USoundBase;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }UBoxComponent;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ UCLASS()}
+\DoxyCodeLine{00016\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_weapon}{AWeapon}}\ :\ public\ \mbox{\hyperlink{class_a_item}{AItem}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_a_weapon}{AWeapon}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ Equip(USceneComponent*\ InParent,\ FName\ InSocketName,\ AActor*\ NewOwner,\ APawn*\ NewInstigator);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ DeactivateEmbers();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ DisableSphereCollision();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ PlayEquipSound();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ AttachMeshToSocket(USceneComponent*\ InParent,\ \textcolor{keyword}{const}\ FName\&\ InSocketName);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ TArray<AActor*>\ \mbox{\hyperlink{class_a_weapon_a14b26fe9285dfe0a0b0ffda1ba8e8c68}{IgnoreActors}};}
+\DoxyCodeLine{00028\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00032\ \ \ \ \ void\ OnBoxOverlap(UPrimitiveComponent*\ OverlappedComponent,\ AActor*\ OtherActor,\ UPrimitiveComponent*\ OtherComp,\ int32\ OtherBodyIndex,\ \textcolor{keywordtype}{bool}\ bFromSweep,\ const\ FHitResult\&\ SweepResult);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ ActorIsSameType(AActor*\ OtherActor);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ ExecuteGetHit(FHitResult\&\ BoxHit);}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ UFUNCTION(BlueprintImplementableEvent)}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ CreateFields(const\ FVector\&\ FieldLocation);}
+\DoxyCodeLine{00040\ private:}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ BoxTrace(FHitResult\&\ BoxHit);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Weapon\ Properties"{})}
+\DoxyCodeLine{00045\ \ \ \ \ FVector\ BoxTraceExtent\ =\ FVector(5.f);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Weapon\ Properties"{})}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ bShowBoxDebug\ =\ false;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Weapon\ Properties"{})}
+\DoxyCodeLine{00051\ \ \ \ \ USoundBase*\ EquipSound;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ Category\ =\ "{}Weapon\ Properties"{})}
+\DoxyCodeLine{00054\ \ \ \ \ UBoxComponent*\ WeaponBox;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00057\ \ \ \ \ USceneComponent*\ BoxTraceStart;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00060\ \ \ \ \ USceneComponent*\ BoxTraceEnd;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Weapon\ Properties"{})}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{float}\ Damage\ =\ 20.f;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ public:}
+\DoxyCodeLine{00066\ \ \ \ \ FORCEINLINE\ UBoxComponent*\ GetWeaponBox()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ WeaponBox;\ \}}
+\DoxyCodeLine{00067\ \};}
+
+\end{DoxyCode}

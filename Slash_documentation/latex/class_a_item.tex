@@ -1,0 +1,271 @@
+\doxysection{AItem Class Reference}
+\hypertarget{class_a_item}{}\label{class_a_item}\index{AItem@{AItem}}
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+
+
+Inheritance diagram for AItem\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_a_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for AItem\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=126pt]{class_a_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_item_a8650f2d2897644f787e593d09643baf2}{AItem}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_item_aeaf3d6dcb16d74ed8699a5d84bc48017}{Tick}} (float Delta\+Time) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_item_ab11b1af717ab700069f202507d36b5c4}{Begin\+Play}} () override
+\item 
+float \mbox{\hyperlink{class_a_item_a12f18465da5db0a31ae0798a8961d2e7}{Transformed\+Sin}} ()
+\item 
+float \mbox{\hyperlink{class_a_item_a79219393795df4fd87cc801b847ed36f}{Transformed\+Cos}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_a_item_ac70b71672309f932e5f7db2f9945560c}{Avg}} (T First, T Second)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_adc27429329700e7475fadb6141ef6af8}{On\+Sphere\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const FHit\+Result \&Sweep\+Result)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_ab916a2fafac02d2830ab1e13ef18349f}{On\+Sphere\+End\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_a9d3ba60108ef0f89a2220b7168b1dd2d}{Spawn\+Pickup\+System}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_item_a27ea62ef3cb331e391b074eab0f0f011}{Spawn\+Pickup\+Sound}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_a_item_af21b47e36b57aa0176ca7f7ca11c92f1}{Amplitude}} = 0.\+25f
+\item 
+float \mbox{\hyperlink{class_a_item_a7197403611d8f480fd773219f1dbc9f8}{Time\+Constant}} = 5.f
+\item 
+UStatic\+Mesh\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_aaaca39d378cd03f9eb8d0c262ca02c7a}{Item\+Mesh}}
+\item 
+\mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItem\+State}} \mbox{\hyperlink{class_a_item_ab2f7e6ae59b093c02be5eda9da6bd038}{Item\+State}} = \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264afaa26f56bc8a0dc30cc11e09b01f2b11}{EItem\+State\+::\+EIS\+\_\+\+Hovering}}
+\item 
+USphere\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_a9fb72b55d6d173f24c39a8d385a5b514}{Sphere}}
+\item 
+UNiagara\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_ae1dcd8a17f44b143caa57ec35c4878f0}{Item\+Effect}}
+\item 
+USound\+Base \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_a71ec90be58bc271225ca4f8c59e03200}{Pickup\+Sound}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_item_a8650f2d2897644f787e593d09643baf2}\index{AItem@{AItem}!AItem@{AItem}}
+\index{AItem@{AItem}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{AItem()}{AItem()}}
+{\footnotesize\ttfamily \label{class_a_item_a8650f2d2897644f787e593d09643baf2} 
+AItem\+::\+AItem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_item_ac70b71672309f932e5f7db2f9945560c}\index{AItem@{AItem}!Avg@{Avg}}
+\index{Avg@{Avg}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{Avg()}{Avg()}}
+{\footnotesize\ttfamily \label{class_a_item_ac70b71672309f932e5f7db2f9945560c} 
+template$<$typename T $>$ \\
+T AItem\+::\+Avg (\begin{DoxyParamCaption}\item[{T}]{First}{, }\item[{T}]{Second}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_ab11b1af717ab700069f202507d36b5c4}\index{AItem@{AItem}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_item_ab11b1af717ab700069f202507d36b5c4} 
+void AItem\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_soul_aae15d2341899168c760a1cc054d8d5f6}{ASoul}}, and \mbox{\hyperlink{class_a_weapon_ac7b8b5af7789df37243bd2391829d906}{AWeapon}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_item_ab11b1af717ab700069f202507d36b5c4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_item_ab916a2fafac02d2830ab1e13ef18349f}\index{AItem@{AItem}!OnSphereEndOverlap@{OnSphereEndOverlap}}
+\index{OnSphereEndOverlap@{OnSphereEndOverlap}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{OnSphereEndOverlap()}{OnSphereEndOverlap()}}
+{\footnotesize\ttfamily \label{class_a_item_ab916a2fafac02d2830ab1e13ef18349f} 
+void AItem\+::\+On\+Sphere\+End\+Overlap (\begin{DoxyParamCaption}\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Overlapped\+Component}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Other\+Actor}{, }\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Other\+Comp}{, }\item[{int32}]{Other\+Body\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_item_ab916a2fafac02d2830ab1e13ef18349f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_item_ab916a2fafac02d2830ab1e13ef18349f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_item_adc27429329700e7475fadb6141ef6af8}\index{AItem@{AItem}!OnSphereOverlap@{OnSphereOverlap}}
+\index{OnSphereOverlap@{OnSphereOverlap}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{OnSphereOverlap()}{OnSphereOverlap()}}
+{\footnotesize\ttfamily \label{class_a_item_adc27429329700e7475fadb6141ef6af8} 
+void AItem\+::\+On\+Sphere\+Overlap (\begin{DoxyParamCaption}\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Overlapped\+Component}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Other\+Actor}{, }\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Other\+Comp}{, }\item[{int32}]{Other\+Body\+Index}{, }\item[{bool}]{b\+From\+Sweep}{, }\item[{const FHit\+Result \&}]{Sweep\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_soul_a641e8ef544c8f9be7d86a5998f9d2c8c}{ASoul}}, and \mbox{\hyperlink{class_a_treasure_a8a7a2edee4755648d0345993a0e13680}{ATreasure}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_item_adc27429329700e7475fadb6141ef6af8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_a_item_adc27429329700e7475fadb6141ef6af8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_item_a27ea62ef3cb331e391b074eab0f0f011}\index{AItem@{AItem}!SpawnPickupSound@{SpawnPickupSound}}
+\index{SpawnPickupSound@{SpawnPickupSound}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{SpawnPickupSound()}{SpawnPickupSound()}}
+{\footnotesize\ttfamily \label{class_a_item_a27ea62ef3cb331e391b074eab0f0f011} 
+void AItem\+::\+Spawn\+Pickup\+Sound (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_item_a27ea62ef3cb331e391b074eab0f0f011_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_item_a9d3ba60108ef0f89a2220b7168b1dd2d}\index{AItem@{AItem}!SpawnPickupSystem@{SpawnPickupSystem}}
+\index{SpawnPickupSystem@{SpawnPickupSystem}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{SpawnPickupSystem()}{SpawnPickupSystem()}}
+{\footnotesize\ttfamily \label{class_a_item_a9d3ba60108ef0f89a2220b7168b1dd2d} 
+void AItem\+::\+Spawn\+Pickup\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_item_a9d3ba60108ef0f89a2220b7168b1dd2d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_item_aeaf3d6dcb16d74ed8699a5d84bc48017}\index{AItem@{AItem}!Tick@{Tick}}
+\index{Tick@{Tick}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_item_aeaf3d6dcb16d74ed8699a5d84bc48017} 
+void AItem\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_soul_a3079edc6ce57c533df5d41e7cc40f276}{ASoul}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_a_item_aeaf3d6dcb16d74ed8699a5d84bc48017_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_item_a79219393795df4fd87cc801b847ed36f}\index{AItem@{AItem}!TransformedCos@{TransformedCos}}
+\index{TransformedCos@{TransformedCos}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{TransformedCos()}{TransformedCos()}}
+{\footnotesize\ttfamily \label{class_a_item_a79219393795df4fd87cc801b847ed36f} 
+float AItem\+::\+Transformed\+Cos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_a12f18465da5db0a31ae0798a8961d2e7}\index{AItem@{AItem}!TransformedSin@{TransformedSin}}
+\index{TransformedSin@{TransformedSin}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{TransformedSin()}{TransformedSin()}}
+{\footnotesize\ttfamily \label{class_a_item_a12f18465da5db0a31ae0798a8961d2e7} 
+float AItem\+::\+Transformed\+Sin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_a_item_a12f18465da5db0a31ae0798a8961d2e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_item_af21b47e36b57aa0176ca7f7ca11c92f1}\index{AItem@{AItem}!Amplitude@{Amplitude}}
+\index{Amplitude@{Amplitude}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{Amplitude}{Amplitude}}
+{\footnotesize\ttfamily \label{class_a_item_af21b47e36b57aa0176ca7f7ca11c92f1} 
+float AItem\+::\+Amplitude = 0.\+25f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_ae1dcd8a17f44b143caa57ec35c4878f0}\index{AItem@{AItem}!ItemEffect@{ItemEffect}}
+\index{ItemEffect@{ItemEffect}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{ItemEffect}{ItemEffect}}
+{\footnotesize\ttfamily \label{class_a_item_ae1dcd8a17f44b143caa57ec35c4878f0} 
+UNiagara\+Component\texorpdfstring{$\ast$}{*} AItem\+::\+Item\+Effect\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_aaaca39d378cd03f9eb8d0c262ca02c7a}\index{AItem@{AItem}!ItemMesh@{ItemMesh}}
+\index{ItemMesh@{ItemMesh}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{ItemMesh}{ItemMesh}}
+{\footnotesize\ttfamily \label{class_a_item_aaaca39d378cd03f9eb8d0c262ca02c7a} 
+UStatic\+Mesh\+Component\texorpdfstring{$\ast$}{*} AItem\+::\+Item\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_ab2f7e6ae59b093c02be5eda9da6bd038}\index{AItem@{AItem}!ItemState@{ItemState}}
+\index{ItemState@{ItemState}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{ItemState}{ItemState}}
+{\footnotesize\ttfamily \label{class_a_item_ab2f7e6ae59b093c02be5eda9da6bd038} 
+\mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItem\+State}} AItem\+::\+Item\+State = \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264afaa26f56bc8a0dc30cc11e09b01f2b11}{EItem\+State\+::\+EIS\+\_\+\+Hovering}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_a71ec90be58bc271225ca4f8c59e03200}\index{AItem@{AItem}!PickupSound@{PickupSound}}
+\index{PickupSound@{PickupSound}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{PickupSound}{PickupSound}}
+{\footnotesize\ttfamily \label{class_a_item_a71ec90be58bc271225ca4f8c59e03200} 
+USound\+Base\texorpdfstring{$\ast$}{*} AItem\+::\+Pickup\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_a9fb72b55d6d173f24c39a8d385a5b514}\index{AItem@{AItem}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{Sphere}{Sphere}}
+{\footnotesize\ttfamily \label{class_a_item_a9fb72b55d6d173f24c39a8d385a5b514} 
+USphere\+Component\texorpdfstring{$\ast$}{*} AItem\+::\+Sphere\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_item_a7197403611d8f480fd773219f1dbc9f8}\index{AItem@{AItem}!TimeConstant@{TimeConstant}}
+\index{TimeConstant@{TimeConstant}!AItem@{AItem}}
+\doxysubsubsection{\texorpdfstring{TimeConstant}{TimeConstant}}
+{\footnotesize\ttfamily \label{class_a_item_a7197403611d8f480fd773219f1dbc9f8} 
+float AItem\+::\+Time\+Constant = 5.f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Items/\mbox{\hyperlink{_item_8h}{Item.\+h}}\item 
+Private/\+Items/\mbox{\hyperlink{_item_8cpp}{Item.\+cpp}}\end{DoxyCompactItemize}

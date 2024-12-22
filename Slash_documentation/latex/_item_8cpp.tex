@@ -1,0 +1,40 @@
+\doxysection{Private/\+Items/\+Item.cpp File Reference}
+\hypertarget{_item_8cpp}{}\label{_item_8cpp}\index{Private/Items/Item.cpp@{Private/Items/Item.cpp}}
+{\ttfamily \#include "{}Items/\+Item.\+h"{}}\newline
+{\ttfamily \#include "{}Slash/\+Debug\+Macros.\+h"{}}\newline
+{\ttfamily \#include "{}Components/\+Sphere\+Component.\+h"{}}\newline
+{\ttfamily \#include "{}Interfaces/\+Pickup\+Interface.\+h"{}}\newline
+{\ttfamily \#include "{}Niagara\+Component.\+h"{}}\newline
+{\ttfamily \#include "{}Niagara\+Function\+Library.\+h"{}}\newline
+{\ttfamily \#include "{}Kismet/\+Gameplay\+Statics.\+h"{}}\newline
+Include dependency graph for Item.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_item_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_item_8cpp_a3120c44020c80dada713a0e1915158ff}{DRAW\+\_\+\+VECTOR\+\_\+\+Single\+Frame}}(Start\+Location,  End\+Location)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_item_8cpp_a3120c44020c80dada713a0e1915158ff}\index{Item.cpp@{Item.cpp}!DRAW\_VECTOR\_SingleFrame@{DRAW\_VECTOR\_SingleFrame}}
+\index{DRAW\_VECTOR\_SingleFrame@{DRAW\_VECTOR\_SingleFrame}!Item.cpp@{Item.cpp}}
+\doxysubsubsection{\texorpdfstring{DRAW\_VECTOR\_SingleFrame}{DRAW\_VECTOR\_SingleFrame}}
+{\footnotesize\ttfamily \label{_item_8cpp_a3120c44020c80dada713a0e1915158ff} 
+\#define DRAW\+\_\+\+VECTOR\+\_\+\+Single\+Frame(\begin{DoxyParamCaption}\item[{}]{Start\+Location}{, }\item[{}]{End\+Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(GetWorld())\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f,\ 0,\ 1.f);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ DrawDebugPoint(GetWorld(),\ EndLocation,\ 15.f,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}

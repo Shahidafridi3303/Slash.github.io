@@ -1,0 +1,124 @@
+\doxysection{USlash\+Anim\+Instance Class Reference}
+\hypertarget{class_u_slash_anim_instance}{}\label{class_u_slash_anim_instance}\index{USlashAnimInstance@{USlashAnimInstance}}
+
+
+{\ttfamily \#include $<$Slash\+Anim\+Instance.\+h$>$}
+
+
+
+Inheritance diagram for USlash\+Anim\+Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_u_slash_anim_instance__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for USlash\+Anim\+Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_u_slash_anim_instance__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_slash_anim_instance_a7a4f5460a5fdc48e64b64d434f39f04b}{Native\+Initialize\+Animation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_u_slash_anim_instance_ac8ec3dc059f89580d9b3a72cf4b10035}{Native\+Update\+Animation}} (float Delta\+Time) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_a_slash_character}{ASlash\+Character}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_slash_anim_instance_aaf1fab1c6d91dd4344a0475a153de3f7}{Slash\+Character}}
+\item 
+class UCharacter\+Movement\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_slash_anim_instance_aa5a384b00f78665a642c62bc4e2471f4}{Slash\+Character\+Movement}}
+\item 
+float \mbox{\hyperlink{class_u_slash_anim_instance_a30d91b0939390fed8538f5ad10ffd10a}{Ground\+Speed}}
+\item 
+bool \mbox{\hyperlink{class_u_slash_anim_instance_aa3f3276bb856d42fc4b0c09f8496adf6}{Is\+Falling}}
+\item 
+\mbox{\hyperlink{_character_types_8h_a1eee02477e4d3ad60fece0fbf612fdd5}{ECharacter\+State}} \mbox{\hyperlink{class_u_slash_anim_instance_a1880691cf88448cb02f06d8b205f1819}{Character\+State}}
+\item 
+\mbox{\hyperlink{_character_types_8h_af76f1f4260f27f698f264beecbd387d9}{EAction\+State}} \mbox{\hyperlink{class_u_slash_anim_instance_af4ab1b903ef174547ead0a0f012c34fa}{Action\+State}}
+\item 
+TEnum\+As\+Byte$<$ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}} $>$ \mbox{\hyperlink{class_u_slash_anim_instance_a5c4f3089ce145aa393c40bc45ea7bfa3}{Death\+Pose}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_slash_anim_instance_a7a4f5460a5fdc48e64b64d434f39f04b}\index{USlashAnimInstance@{USlashAnimInstance}!NativeInitializeAnimation@{NativeInitializeAnimation}}
+\index{NativeInitializeAnimation@{NativeInitializeAnimation}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{NativeInitializeAnimation()}{NativeInitializeAnimation()}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_a7a4f5460a5fdc48e64b64d434f39f04b} 
+void USlash\+Anim\+Instance\+::\+Native\+Initialize\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_u_slash_anim_instance_ac8ec3dc059f89580d9b3a72cf4b10035}\index{USlashAnimInstance@{USlashAnimInstance}!NativeUpdateAnimation@{NativeUpdateAnimation}}
+\index{NativeUpdateAnimation@{NativeUpdateAnimation}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{NativeUpdateAnimation()}{NativeUpdateAnimation()}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_ac8ec3dc059f89580d9b3a72cf4b10035} 
+void USlash\+Anim\+Instance\+::\+Native\+Update\+Animation (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_slash_anim_instance_ac8ec3dc059f89580d9b3a72cf4b10035_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_slash_anim_instance_af4ab1b903ef174547ead0a0f012c34fa}\index{USlashAnimInstance@{USlashAnimInstance}!ActionState@{ActionState}}
+\index{ActionState@{ActionState}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{ActionState}{ActionState}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_af4ab1b903ef174547ead0a0f012c34fa} 
+\mbox{\hyperlink{_character_types_8h_af76f1f4260f27f698f264beecbd387d9}{EAction\+State}} USlash\+Anim\+Instance\+::\+Action\+State}
+
+\Hypertarget{class_u_slash_anim_instance_a1880691cf88448cb02f06d8b205f1819}\index{USlashAnimInstance@{USlashAnimInstance}!CharacterState@{CharacterState}}
+\index{CharacterState@{CharacterState}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{CharacterState}{CharacterState}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_a1880691cf88448cb02f06d8b205f1819} 
+\mbox{\hyperlink{_character_types_8h_a1eee02477e4d3ad60fece0fbf612fdd5}{ECharacter\+State}} USlash\+Anim\+Instance\+::\+Character\+State}
+
+\Hypertarget{class_u_slash_anim_instance_a5c4f3089ce145aa393c40bc45ea7bfa3}\index{USlashAnimInstance@{USlashAnimInstance}!DeathPose@{DeathPose}}
+\index{DeathPose@{DeathPose}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{DeathPose}{DeathPose}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_a5c4f3089ce145aa393c40bc45ea7bfa3} 
+TEnum\+As\+Byte$<$\mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}}$>$ USlash\+Anim\+Instance\+::\+Death\+Pose}
+
+\Hypertarget{class_u_slash_anim_instance_a30d91b0939390fed8538f5ad10ffd10a}\index{USlashAnimInstance@{USlashAnimInstance}!GroundSpeed@{GroundSpeed}}
+\index{GroundSpeed@{GroundSpeed}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{GroundSpeed}{GroundSpeed}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_a30d91b0939390fed8538f5ad10ffd10a} 
+float USlash\+Anim\+Instance\+::\+Ground\+Speed}
+
+\Hypertarget{class_u_slash_anim_instance_aa3f3276bb856d42fc4b0c09f8496adf6}\index{USlashAnimInstance@{USlashAnimInstance}!IsFalling@{IsFalling}}
+\index{IsFalling@{IsFalling}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{IsFalling}{IsFalling}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_aa3f3276bb856d42fc4b0c09f8496adf6} 
+bool USlash\+Anim\+Instance\+::\+Is\+Falling}
+
+\Hypertarget{class_u_slash_anim_instance_aaf1fab1c6d91dd4344a0475a153de3f7}\index{USlashAnimInstance@{USlashAnimInstance}!SlashCharacter@{SlashCharacter}}
+\index{SlashCharacter@{SlashCharacter}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{SlashCharacter}{SlashCharacter}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_aaf1fab1c6d91dd4344a0475a153de3f7} 
+class \mbox{\hyperlink{class_a_slash_character}{ASlash\+Character}}\texorpdfstring{$\ast$}{*} USlash\+Anim\+Instance\+::\+Slash\+Character}
+
+\Hypertarget{class_u_slash_anim_instance_aa5a384b00f78665a642c62bc4e2471f4}\index{USlashAnimInstance@{USlashAnimInstance}!SlashCharacterMovement@{SlashCharacterMovement}}
+\index{SlashCharacterMovement@{SlashCharacterMovement}!USlashAnimInstance@{USlashAnimInstance}}
+\doxysubsubsection{\texorpdfstring{SlashCharacterMovement}{SlashCharacterMovement}}
+{\footnotesize\ttfamily \label{class_u_slash_anim_instance_aa5a384b00f78665a642c62bc4e2471f4} 
+class UCharacter\+Movement\+Component\texorpdfstring{$\ast$}{*} USlash\+Anim\+Instance\+::\+Slash\+Character\+Movement}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Characters/\mbox{\hyperlink{_slash_anim_instance_8h}{Slash\+Anim\+Instance.\+h}}\item 
+Private/\+Characters/\mbox{\hyperlink{_slash_anim_instance_8cpp}{Slash\+Anim\+Instance.\+cpp}}\end{DoxyCompactItemize}

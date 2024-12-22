@@ -1,0 +1,20 @@
+<map id="Private/HUD/HealthBarComponent.cpp" name="Private/HUD/HealthBarComponent.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="436,5,686,32"/>
+<area shape="rect" id="Node000002" href="$_health_bar_component_8h.html" title=" " alt="" coords="255,80,446,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="525,35,403,77,401,72,524,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="470,80,652,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="564,33,564,64,558,64,558,33"/>
+<area shape="rect" id="Node000007" href="$_health_bar_8h.html" title=" " alt="" coords="676,80,801,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="593,30,695,71,693,76,591,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="514,155,619,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,105,515,147,514,152,387,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,224,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="310,110,171,152,170,147,309,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="248,155,466,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="354,107,357,139,352,139,349,107"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="710,110,612,151,609,146,708,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="655,155,811,181"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="740,107,738,139,733,139,735,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="835,155,986,181"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="769,105,868,146,865,151,767,110"/>
+</map>

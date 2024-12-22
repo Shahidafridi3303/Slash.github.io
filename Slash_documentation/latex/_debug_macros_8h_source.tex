@@ -1,0 +1,25 @@
+\doxysection{Debug\+Macros.\+h}
+\hypertarget{_debug_macros_8h_source}{}\label{_debug_macros_8h_source}\mbox{\hyperlink{_debug_macros_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}DrawDebugHelpers.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ DRAW\_SPHERE(Location)\ if\ (GetWorld())\ DrawDebugSphere(GetWorld(),\ Location,\ 25.f,\ 12,\ FColor::Red,\ true);}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ DRAW\_SPHERE\_COLOR(Location,\ Color)\ DrawDebugSphere(GetWorld(),\ Location,\ 8.f,\ 12,\ Color,\ false,\ 5.f);}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ DRAW\_SPHERE\_SingleFrame(Location)\ if\ (GetWorld())\ DrawDebugSphere(GetWorld(),\ Location,\ 25.f,\ 12,\ FColor::Red,\ false,\ -\/1.f);}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ DRAW\_LINE(StartLocation,\ EndLocation)\ if\ (GetWorld())\ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ true,\ -\/1.f,\ 0,\ 1.f);}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ DRAW\_LINE\_SingleFrame(StartLocation,\ EndLocation)\ if\ (GetWorld())\ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ false,\ -\/1.f,\ 0,\ 1.f);}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ DRAW\_POINT(Location)\ if\ (GetWorld())\ DrawDebugPoint(GetWorld(),\ Location,\ 15.f,\ FColor::Red,\ true);}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ DRAW\_POINT\_SingleFrame(Location)\ if\ (GetWorld())\ DrawDebugPoint(GetWorld(),\ Location,\ 15.f,\ FColor::Red,\ false,\ -\/1.f);}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ DRAW\_VECTOR(StartLocation,\ EndLocation)\ if(GetWorld())\ \(\backslash\)}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \{\ \(\backslash\)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ true,\ -\/1.f,\ 0,\ 1.f);\ \(\backslash\)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ DrawDebugPoint(GetWorld(),\ EndLocation,\ 15.f,\ FColor::Red,\ true);\ \(\backslash\)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ DRAW\_VECTOR\_SingleFrame(StartLocation,\ EndLocation)\ if(GetWorld())\ \(\backslash\)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \{\ \(\backslash\)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ false,\ -\/1.f,\ 0,\ 1.f);\ \(\backslash\)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ DrawDebugPoint(GetWorld(),\ EndLocation,\ 15.f,\ FColor::Red,\ false,\ -\/1.f);\ \(\backslash\)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \}}}
+
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+<map id="Public/Pawns/Bird.h" name="Public/Pawns/Bird.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="150,5,289,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,35,101,76,99,71,190,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,80,304,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,33,222,64,217,64,217,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="328,80,444,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,30,344,71,342,76,247,35"/>
+</map>

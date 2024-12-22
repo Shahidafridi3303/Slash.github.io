@@ -1,0 +1,479 @@
+\doxysection{ABase\+Character Class Reference}
+\hypertarget{class_a_base_character}{}\label{class_a_base_character}\index{ABaseCharacter@{ABaseCharacter}}
+
+
+{\ttfamily \#include $<$Base\+Character.\+h$>$}
+
+
+
+Inheritance diagram for ABase\+Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_a_base_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ABase\+Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_a_base_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_base_character_a2eefd65d26c2554026fe1810997d4d60}{ABase\+Character}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_a31c30172da69909d78ee54f537e4981a}{Tick}} (float Delta\+Time) override
+\item 
+FORCEINLINE TEnum\+As\+Byte$<$ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}} $>$ \mbox{\hyperlink{class_a_base_character_a0d93c16c6440415ac40bac064dcf8c16}{Get\+Death\+Pose}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_hit_interface}{IHit\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_i_hit_interface_ac535bfda69dd3ee9bddc613326a6880e}{Get\+Hit}} (const FVector \&Impact\+Point, AActor \texorpdfstring{$\ast$}{*}Hitter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_a2d83630c5ef87b8b4956456c422292af}{Begin\+Play}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_aceb150770417fe988609ec9fe50187d6}{Get\+Hit\+\_\+\+Implementation}} (const FVector \&Impact\+Point, AActor \texorpdfstring{$\ast$}{*}Hitter) override
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_a8fdb5a696ac22a942339f2ef5238a4dc}{Attack}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a83566f04974ce53cdb4486820244bc6d}{Die}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_afc12149c67b4dba7267ff74d652ad28f}{Directional\+Hit\+React}} (const FVector \&Impact\+Point)
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_aa0b9edbbd1d4269c85802aa46877cad4}{Handle\+Damage}} (float Damage\+Amount)
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_ab607d7b59c88c7e6020651393a3aab94}{Add\+Health}} (float Amount)
+\item 
+void \mbox{\hyperlink{class_a_base_character_aa7262d4c581d80140196ad91a19a4b01}{Play\+Hit\+Sound}} (const FVector \&Impact\+Point)
+\item 
+void \mbox{\hyperlink{class_a_base_character_a7687fa128f6265a505aad8474ead5d61}{Spawn\+Hit\+Particles}} (const FVector \&Impact\+Point)
+\item 
+void \mbox{\hyperlink{class_a_base_character_ae5fc84f5b42b67c188175ced53c36a40}{Disable\+Capsule}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_a_base_character_a7fac2c4a069d8e2f2d85d1d3548dd7ba}{Can\+Attack}} ()
+\item 
+bool \mbox{\hyperlink{class_a_base_character_ac82b1413264b6fac92a7fb6ebed7d45b}{Is\+Alive}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a09a1da48f2e294ec680acd859cf0be45}{Disable\+Mesh\+Collision}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a4c80385741b19725cda1f29ce1e6fc71}{Play\+Hit\+React\+Montage}} (const FName \&Section\+Name)
+\item 
+virtual int32 \mbox{\hyperlink{class_a_base_character_a0619ca62bc9ffb71411f8a0f00ea00a1}{Play\+Attack\+Montage}} ()
+\item 
+virtual int32 \mbox{\hyperlink{class_a_base_character_acf58b727d6b78cb6db1f76d97ed5c1cc}{Play\+Death\+Montage}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_af91f253a0db9a438bac5ed95320a0fe1}{Stop\+Attack\+Montage}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_a98e4d74fcb872de09913841a77d8ebae}{Play\+Dodge\+Montage}} ()
+\item 
+FVector \mbox{\hyperlink{class_a_base_character_a1300212d41894657cf9b67723b31f76e}{Get\+Translation\+Warp\+Target}} ()
+\item 
+FVector \mbox{\hyperlink{class_a_base_character_a65586a24de03c50142d0e7e73fecb43d}{Get\+Rotation\+Warp\+Target}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_abdeed2ef33c6b68aaf2a8f0f3e93c231}{Attack\+End}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_abc7045a9d31c0e662b580fedcda09916}{Dodge\+End}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a2a5e8c823d81821609bcd1b956c3a457}{Set\+Weapon\+Collision\+Enabled}} (ECollision\+Enabled\+::\+Type Collision\+Enabled)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_weapon}{AWeapon}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_base_character_ae8d6dbfcdf56a15c6993db76a63a7956}{Equipped\+Weapon}}
+\item 
+UAttribute\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_base_character_aaaf84faf5bcdde4d3ff05a0087123710}{Attributes}}
+\item 
+AActor \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_base_character_a1ed76720bb6ae4d441485a0000e7e5ce}{Combat\+Target}}
+\item 
+double \mbox{\hyperlink{class_a_base_character_af449388ca89ad6958dcd08abc879be0d}{Warp\+Target\+Distance}} = 75.f
+\item 
+TEnum\+As\+Byte$<$ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}} $>$ \mbox{\hyperlink{class_a_base_character_ae4ad7162d1657dc69586e2ffffc9baeb}{Death\+Pose}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_base_character_a2eefd65d26c2554026fe1810997d4d60}\index{ABaseCharacter@{ABaseCharacter}!ABaseCharacter@{ABaseCharacter}}
+\index{ABaseCharacter@{ABaseCharacter}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{ABaseCharacter()}{ABaseCharacter()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a2eefd65d26c2554026fe1810997d4d60} 
+ABase\+Character\+::\+ABase\+Character (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_base_character_ab607d7b59c88c7e6020651393a3aab94}\index{ABaseCharacter@{ABaseCharacter}!AddHealth@{AddHealth}}
+\index{AddHealth@{AddHealth}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{AddHealth()}{AddHealth()}}
+{\footnotesize\ttfamily \label{class_a_base_character_ab607d7b59c88c7e6020651393a3aab94} 
+void ABase\+Character\+::\+Add\+Health (\begin{DoxyParamCaption}\item[{float}]{Amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_ab607d7b59c88c7e6020651393a3aab94_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a8fdb5a696ac22a942339f2ef5238a4dc}\index{ABaseCharacter@{ABaseCharacter}!Attack@{Attack}}
+\index{Attack@{Attack}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a8fdb5a696ac22a942339f2ef5238a4dc} 
+void ABase\+Character\+::\+Attack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_a2cdabec54e5732bdeae55847767e940c}{AEnemy}}, and \mbox{\hyperlink{class_a_slash_character_a843fff397909c69e6e698f0403796bd3}{ASlash\+Character}}.
+
+\Hypertarget{class_a_base_character_abdeed2ef33c6b68aaf2a8f0f3e93c231}\index{ABaseCharacter@{ABaseCharacter}!AttackEnd@{AttackEnd}}
+\index{AttackEnd@{AttackEnd}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{AttackEnd()}{AttackEnd()}}
+{\footnotesize\ttfamily \label{class_a_base_character_abdeed2ef33c6b68aaf2a8f0f3e93c231} 
+void ABase\+Character\+::\+Attack\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_a48eaf774b181eeca7a16593522f08d6b}{AEnemy}}, and \mbox{\hyperlink{class_a_slash_character_ac4c61a07289d6b3039db441d81db11a3}{ASlash\+Character}}.
+
+\Hypertarget{class_a_base_character_a2d83630c5ef87b8b4956456c422292af}\index{ABaseCharacter@{ABaseCharacter}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a2d83630c5ef87b8b4956456c422292af} 
+void ABase\+Character\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_abd845c5787bc005ae01686635f7f3fba}{AEnemy}}, and \mbox{\hyperlink{class_a_slash_character_ab4611784f562b585ea71882284a3bb18}{ASlash\+Character}}.
+
+\Hypertarget{class_a_base_character_a7fac2c4a069d8e2f2d85d1d3548dd7ba}\index{ABaseCharacter@{ABaseCharacter}!CanAttack@{CanAttack}}
+\index{CanAttack@{CanAttack}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{CanAttack()}{CanAttack()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a7fac2c4a069d8e2f2d85d1d3548dd7ba} 
+bool ABase\+Character\+::\+Can\+Attack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_a178b637e9fb8c7e2df5f4bfff7acd0a5}{AEnemy}}, and \mbox{\hyperlink{class_a_slash_character_a633bf65c43fc8804e75c65610da3efdc}{ASlash\+Character}}.
+
+\Hypertarget{class_a_base_character_a83566f04974ce53cdb4486820244bc6d}\index{ABaseCharacter@{ABaseCharacter}!Die@{Die}}
+\index{Die@{Die}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a83566f04974ce53cdb4486820244bc6d} 
+void ABase\+Character\+::\+Die (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_a_base_character_a83566f04974ce53cdb4486820244bc6d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_afc12149c67b4dba7267ff74d652ad28f}\index{ABaseCharacter@{ABaseCharacter}!DirectionalHitReact@{DirectionalHitReact}}
+\index{DirectionalHitReact@{DirectionalHitReact}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{DirectionalHitReact()}{DirectionalHitReact()}}
+{\footnotesize\ttfamily \label{class_a_base_character_afc12149c67b4dba7267ff74d652ad28f} 
+void ABase\+Character\+::\+Directional\+Hit\+React (\begin{DoxyParamCaption}\item[{const FVector \&}]{Impact\+Point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_afc12149c67b4dba7267ff74d652ad28f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_afc12149c67b4dba7267ff74d652ad28f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_ae5fc84f5b42b67c188175ced53c36a40}\index{ABaseCharacter@{ABaseCharacter}!DisableCapsule@{DisableCapsule}}
+\index{DisableCapsule@{DisableCapsule}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{DisableCapsule()}{DisableCapsule()}}
+{\footnotesize\ttfamily \label{class_a_base_character_ae5fc84f5b42b67c188175ced53c36a40} 
+void ABase\+Character\+::\+Disable\+Capsule (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_ae5fc84f5b42b67c188175ced53c36a40_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a09a1da48f2e294ec680acd859cf0be45}\index{ABaseCharacter@{ABaseCharacter}!DisableMeshCollision@{DisableMeshCollision}}
+\index{DisableMeshCollision@{DisableMeshCollision}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{DisableMeshCollision()}{DisableMeshCollision()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a09a1da48f2e294ec680acd859cf0be45} 
+void ABase\+Character\+::\+Disable\+Mesh\+Collision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a09a1da48f2e294ec680acd859cf0be45_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_abc7045a9d31c0e662b580fedcda09916}\index{ABaseCharacter@{ABaseCharacter}!DodgeEnd@{DodgeEnd}}
+\index{DodgeEnd@{DodgeEnd}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{DodgeEnd()}{DodgeEnd()}}
+{\footnotesize\ttfamily \label{class_a_base_character_abc7045a9d31c0e662b580fedcda09916} 
+void ABase\+Character\+::\+Dodge\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_slash_character_a25aeaf2d13be04a10dd5bbc999beae6a}{ASlash\+Character}}.
+
+\Hypertarget{class_a_base_character_a0d93c16c6440415ac40bac064dcf8c16}\index{ABaseCharacter@{ABaseCharacter}!GetDeathPose@{GetDeathPose}}
+\index{GetDeathPose@{GetDeathPose}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{GetDeathPose()}{GetDeathPose()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a0d93c16c6440415ac40bac064dcf8c16} 
+FORCEINLINE TEnum\+As\+Byte$<$ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}} $>$ ABase\+Character\+::\+Get\+Death\+Pose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a0d93c16c6440415ac40bac064dcf8c16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_aceb150770417fe988609ec9fe50187d6}\index{ABaseCharacter@{ABaseCharacter}!GetHit\_Implementation@{GetHit\_Implementation}}
+\index{GetHit\_Implementation@{GetHit\_Implementation}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{GetHit\_Implementation()}{GetHit\_Implementation()}}
+{\footnotesize\ttfamily \label{class_a_base_character_aceb150770417fe988609ec9fe50187d6} 
+void ABase\+Character\+::\+Get\+Hit\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{const FVector \&}]{Impact\+Point}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Hitter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Combat 
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_a2961058678a97508d91762d054763438}{AEnemy}}, and \mbox{\hyperlink{class_a_slash_character_a823796e0255284d50cbcc29a53ea6ddb}{ASlash\+Character}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_aceb150770417fe988609ec9fe50187d6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a65586a24de03c50142d0e7e73fecb43d}\index{ABaseCharacter@{ABaseCharacter}!GetRotationWarpTarget@{GetRotationWarpTarget}}
+\index{GetRotationWarpTarget@{GetRotationWarpTarget}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{GetRotationWarpTarget()}{GetRotationWarpTarget()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a65586a24de03c50142d0e7e73fecb43d} 
+FVector ABase\+Character\+::\+Get\+Rotation\+Warp\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_base_character_a1300212d41894657cf9b67723b31f76e}\index{ABaseCharacter@{ABaseCharacter}!GetTranslationWarpTarget@{GetTranslationWarpTarget}}
+\index{GetTranslationWarpTarget@{GetTranslationWarpTarget}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{GetTranslationWarpTarget()}{GetTranslationWarpTarget()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a1300212d41894657cf9b67723b31f76e} 
+FVector ABase\+Character\+::\+Get\+Translation\+Warp\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_base_character_aa0b9edbbd1d4269c85802aa46877cad4}\index{ABaseCharacter@{ABaseCharacter}!HandleDamage@{HandleDamage}}
+\index{HandleDamage@{HandleDamage}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{HandleDamage()}{HandleDamage()}}
+{\footnotesize\ttfamily \label{class_a_base_character_aa0b9edbbd1d4269c85802aa46877cad4} 
+void ABase\+Character\+::\+Handle\+Damage (\begin{DoxyParamCaption}\item[{float}]{Damage\+Amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_a76df7fdff82380d35a286d37d2537c11}{AEnemy}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_aa0b9edbbd1d4269c85802aa46877cad4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_ac82b1413264b6fac92a7fb6ebed7d45b}\index{ABaseCharacter@{ABaseCharacter}!IsAlive@{IsAlive}}
+\index{IsAlive@{IsAlive}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{IsAlive()}{IsAlive()}}
+{\footnotesize\ttfamily \label{class_a_base_character_ac82b1413264b6fac92a7fb6ebed7d45b} 
+bool ABase\+Character\+::\+Is\+Alive (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_ac82b1413264b6fac92a7fb6ebed7d45b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a0619ca62bc9ffb71411f8a0f00ea00a1}\index{ABaseCharacter@{ABaseCharacter}!PlayAttackMontage@{PlayAttackMontage}}
+\index{PlayAttackMontage@{PlayAttackMontage}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{PlayAttackMontage()}{PlayAttackMontage()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a0619ca62bc9ffb71411f8a0f00ea00a1} 
+int32 ABase\+Character\+::\+Play\+Attack\+Montage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a0619ca62bc9ffb71411f8a0f00ea00a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_acf58b727d6b78cb6db1f76d97ed5c1cc}\index{ABaseCharacter@{ABaseCharacter}!PlayDeathMontage@{PlayDeathMontage}}
+\index{PlayDeathMontage@{PlayDeathMontage}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{PlayDeathMontage()}{PlayDeathMontage()}}
+{\footnotesize\ttfamily \label{class_a_base_character_acf58b727d6b78cb6db1f76d97ed5c1cc} 
+int32 ABase\+Character\+::\+Play\+Death\+Montage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_base_character_a98e4d74fcb872de09913841a77d8ebae}\index{ABaseCharacter@{ABaseCharacter}!PlayDodgeMontage@{PlayDodgeMontage}}
+\index{PlayDodgeMontage@{PlayDodgeMontage}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{PlayDodgeMontage()}{PlayDodgeMontage()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a98e4d74fcb872de09913841a77d8ebae} 
+void ABase\+Character\+::\+Play\+Dodge\+Montage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a98e4d74fcb872de09913841a77d8ebae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a4c80385741b19725cda1f29ce1e6fc71}\index{ABaseCharacter@{ABaseCharacter}!PlayHitReactMontage@{PlayHitReactMontage}}
+\index{PlayHitReactMontage@{PlayHitReactMontage}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{PlayHitReactMontage()}{PlayHitReactMontage()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a4c80385741b19725cda1f29ce1e6fc71} 
+void ABase\+Character\+::\+Play\+Hit\+React\+Montage (\begin{DoxyParamCaption}\item[{const FName \&}]{Section\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Montage Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a4c80385741b19725cda1f29ce1e6fc71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_aa7262d4c581d80140196ad91a19a4b01}\index{ABaseCharacter@{ABaseCharacter}!PlayHitSound@{PlayHitSound}}
+\index{PlayHitSound@{PlayHitSound}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{PlayHitSound()}{PlayHitSound()}}
+{\footnotesize\ttfamily \label{class_a_base_character_aa7262d4c581d80140196ad91a19a4b01} 
+void ABase\+Character\+::\+Play\+Hit\+Sound (\begin{DoxyParamCaption}\item[{const FVector \&}]{Impact\+Point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_aa7262d4c581d80140196ad91a19a4b01_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a2a5e8c823d81821609bcd1b956c3a457}\index{ABaseCharacter@{ABaseCharacter}!SetWeaponCollisionEnabled@{SetWeaponCollisionEnabled}}
+\index{SetWeaponCollisionEnabled@{SetWeaponCollisionEnabled}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{SetWeaponCollisionEnabled()}{SetWeaponCollisionEnabled()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a2a5e8c823d81821609bcd1b956c3a457} 
+void ABase\+Character\+::\+Set\+Weapon\+Collision\+Enabled (\begin{DoxyParamCaption}\item[{ECollision\+Enabled\+::\+Type}]{Collision\+Enabled}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a2a5e8c823d81821609bcd1b956c3a457_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a2a5e8c823d81821609bcd1b956c3a457_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a7687fa128f6265a505aad8474ead5d61}\index{ABaseCharacter@{ABaseCharacter}!SpawnHitParticles@{SpawnHitParticles}}
+\index{SpawnHitParticles@{SpawnHitParticles}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{SpawnHitParticles()}{SpawnHitParticles()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a7687fa128f6265a505aad8474ead5d61} 
+void ABase\+Character\+::\+Spawn\+Hit\+Particles (\begin{DoxyParamCaption}\item[{const FVector \&}]{Impact\+Point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_a7687fa128f6265a505aad8474ead5d61_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_af91f253a0db9a438bac5ed95320a0fe1}\index{ABaseCharacter@{ABaseCharacter}!StopAttackMontage@{StopAttackMontage}}
+\index{StopAttackMontage@{StopAttackMontage}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{StopAttackMontage()}{StopAttackMontage()}}
+{\footnotesize\ttfamily \label{class_a_base_character_af91f253a0db9a438bac5ed95320a0fe1} 
+void ABase\+Character\+::\+Stop\+Attack\+Montage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_base_character_af91f253a0db9a438bac5ed95320a0fe1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_base_character_a31c30172da69909d78ee54f537e4981a}\index{ABaseCharacter@{ABaseCharacter}!Tick@{Tick}}
+\index{Tick@{Tick}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_base_character_a31c30172da69909d78ee54f537e4981a} 
+void ABase\+Character\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_enemy_a7ad3c69fabaf9310f1966c81c8bbb720}{AEnemy}}, and \mbox{\hyperlink{class_a_slash_character_aa5856dddafa5b932e02631cd05a5cdaf}{ASlash\+Character}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_base_character_aaaf84faf5bcdde4d3ff05a0087123710}\index{ABaseCharacter@{ABaseCharacter}!Attributes@{Attributes}}
+\index{Attributes@{Attributes}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{Attributes}{Attributes}}
+{\footnotesize\ttfamily \label{class_a_base_character_aaaf84faf5bcdde4d3ff05a0087123710} 
+UAttribute\+Component\texorpdfstring{$\ast$}{*} ABase\+Character\+::\+Attributes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_base_character_a1ed76720bb6ae4d441485a0000e7e5ce}\index{ABaseCharacter@{ABaseCharacter}!CombatTarget@{CombatTarget}}
+\index{CombatTarget@{CombatTarget}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{CombatTarget}{CombatTarget}}
+{\footnotesize\ttfamily \label{class_a_base_character_a1ed76720bb6ae4d441485a0000e7e5ce} 
+AActor\texorpdfstring{$\ast$}{*} ABase\+Character\+::\+Combat\+Target\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_base_character_ae4ad7162d1657dc69586e2ffffc9baeb}\index{ABaseCharacter@{ABaseCharacter}!DeathPose@{DeathPose}}
+\index{DeathPose@{DeathPose}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{DeathPose}{DeathPose}}
+{\footnotesize\ttfamily \label{class_a_base_character_ae4ad7162d1657dc69586e2ffffc9baeb} 
+TEnum\+As\+Byte$<$\mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}}$>$ ABase\+Character\+::\+Death\+Pose\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_base_character_ae8d6dbfcdf56a15c6993db76a63a7956}\index{ABaseCharacter@{ABaseCharacter}!EquippedWeapon@{EquippedWeapon}}
+\index{EquippedWeapon@{EquippedWeapon}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{EquippedWeapon}{EquippedWeapon}}
+{\footnotesize\ttfamily \label{class_a_base_character_ae8d6dbfcdf56a15c6993db76a63a7956} 
+\mbox{\hyperlink{class_a_weapon}{AWeapon}}\texorpdfstring{$\ast$}{*} ABase\+Character\+::\+Equipped\+Weapon\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_base_character_af449388ca89ad6958dcd08abc879be0d}\index{ABaseCharacter@{ABaseCharacter}!WarpTargetDistance@{WarpTargetDistance}}
+\index{WarpTargetDistance@{WarpTargetDistance}!ABaseCharacter@{ABaseCharacter}}
+\doxysubsubsection{\texorpdfstring{WarpTargetDistance}{WarpTargetDistance}}
+{\footnotesize\ttfamily \label{class_a_base_character_af449388ca89ad6958dcd08abc879be0d} 
+double ABase\+Character\+::\+Warp\+Target\+Distance = 75.f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Characters/\mbox{\hyperlink{_base_character_8h}{Base\+Character.\+h}}\item 
+Private/\+Characters/\mbox{\hyperlink{_base_character_8cpp}{Base\+Character.\+cpp}}\end{DoxyCompactItemize}

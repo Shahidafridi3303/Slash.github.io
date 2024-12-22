@@ -1,0 +1,304 @@
+\doxysection{AWeapon Class Reference}
+\hypertarget{class_a_weapon}{}\label{class_a_weapon}\index{AWeapon@{AWeapon}}
+
+
+{\ttfamily \#include $<$Weapon.\+h$>$}
+
+
+
+Inheritance diagram for AWeapon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{class_a_weapon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for AWeapon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{class_a_weapon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_weapon_a10291d0ef9f874881c6233a1e88ce93e}{AWeapon}} ()
+\item 
+void \mbox{\hyperlink{class_a_weapon_ad415900448969b98eebf669fc09c2c57}{Equip}} (UScene\+Component \texorpdfstring{$\ast$}{*}In\+Parent, FName In\+Socket\+Name, AActor \texorpdfstring{$\ast$}{*}New\+Owner, APawn \texorpdfstring{$\ast$}{*}New\+Instigator)
+\item 
+void \mbox{\hyperlink{class_a_weapon_a6965dcb7fa40f22563baf649c06aa888}{Deactivate\+Embers}} ()
+\item 
+void \mbox{\hyperlink{class_a_weapon_af5760c894c6e01463984fc0855795401}{Disable\+Sphere\+Collision}} ()
+\item 
+void \mbox{\hyperlink{class_a_weapon_ad60eb2506690f7a9b834a6827650b7a5}{Play\+Equip\+Sound}} ()
+\item 
+void \mbox{\hyperlink{class_a_weapon_a85b01f5b76cb7c94714c53d40a06a7de}{Attach\+Mesh\+To\+Socket}} (UScene\+Component \texorpdfstring{$\ast$}{*}In\+Parent, const FName \&In\+Socket\+Name)
+\item 
+FORCEINLINE UBox\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_weapon_ac12a8834711db517a4e9c5e3f319dbca}{Get\+Weapon\+Box}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_item}{AItem}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_item_a8650f2d2897644f787e593d09643baf2}{AItem}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_item_aeaf3d6dcb16d74ed8699a5d84bc48017}{Tick}} (float Delta\+Time) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ AActor \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_a_weapon_a14b26fe9285dfe0a0b0ffda1ba8e8c68}{Ignore\+Actors}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_weapon_ac7b8b5af7789df37243bd2391829d906}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_weapon_a0209db7112fc1907adcef182dac3ee2c}{On\+Box\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const FHit\+Result \&Sweep\+Result)
+\item 
+bool \mbox{\hyperlink{class_a_weapon_aad968ecead9f8dfadce798c02f2de6c1}{Actor\+Is\+Same\+Type}} (AActor \texorpdfstring{$\ast$}{*}Other\+Actor)
+\item 
+void \mbox{\hyperlink{class_a_weapon_a6d07b684123e49d6fe622cc3b834ccd0}{Execute\+Get\+Hit}} (FHit\+Result \&Box\+Hit)
+\item 
+void \mbox{\hyperlink{class_a_weapon_a2e853e8683d2423cb5090620452cb552}{Create\+Fields}} (const FVector \&Field\+Location)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_a_item}{AItem}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_a_item_a12f18465da5db0a31ae0798a8961d2e7}{Transformed\+Sin}} ()
+\item 
+float \mbox{\hyperlink{class_a_item_a79219393795df4fd87cc801b847ed36f}{Transformed\+Cos}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{class_a_item_ac70b71672309f932e5f7db2f9945560c}{Avg}} (T First, T Second)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_adc27429329700e7475fadb6141ef6af8}{On\+Sphere\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const FHit\+Result \&Sweep\+Result)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_ab916a2fafac02d2830ab1e13ef18349f}{On\+Sphere\+End\+Overlap}} (UPrimitive\+Component \texorpdfstring{$\ast$}{*}Overlapped\+Component, AActor \texorpdfstring{$\ast$}{*}Other\+Actor, UPrimitive\+Component \texorpdfstring{$\ast$}{*}Other\+Comp, int32 Other\+Body\+Index)
+\item 
+virtual void \mbox{\hyperlink{class_a_item_a9d3ba60108ef0f89a2220b7168b1dd2d}{Spawn\+Pickup\+System}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_item_a27ea62ef3cb331e391b074eab0f0f011}{Spawn\+Pickup\+Sound}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_a_item}{AItem}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_a_item_af21b47e36b57aa0176ca7f7ca11c92f1}{Amplitude}} = 0.\+25f
+\item 
+float \mbox{\hyperlink{class_a_item_a7197403611d8f480fd773219f1dbc9f8}{Time\+Constant}} = 5.f
+\item 
+UStatic\+Mesh\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_aaaca39d378cd03f9eb8d0c262ca02c7a}{Item\+Mesh}}
+\item 
+\mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItem\+State}} \mbox{\hyperlink{class_a_item_ab2f7e6ae59b093c02be5eda9da6bd038}{Item\+State}} = \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264afaa26f56bc8a0dc30cc11e09b01f2b11}{EItem\+State\+::\+EIS\+\_\+\+Hovering}}
+\item 
+USphere\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_a9fb72b55d6d173f24c39a8d385a5b514}{Sphere}}
+\item 
+UNiagara\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_ae1dcd8a17f44b143caa57ec35c4878f0}{Item\+Effect}}
+\item 
+USound\+Base \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_item_a71ec90be58bc271225ca4f8c59e03200}{Pickup\+Sound}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_weapon_a10291d0ef9f874881c6233a1e88ce93e}\index{AWeapon@{AWeapon}!AWeapon@{AWeapon}}
+\index{AWeapon@{AWeapon}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{AWeapon()}{AWeapon()}}
+{\footnotesize\ttfamily \label{class_a_weapon_a10291d0ef9f874881c6233a1e88ce93e} 
+AWeapon\+::\+AWeapon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_weapon_aad968ecead9f8dfadce798c02f2de6c1}\index{AWeapon@{AWeapon}!ActorIsSameType@{ActorIsSameType}}
+\index{ActorIsSameType@{ActorIsSameType}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{ActorIsSameType()}{ActorIsSameType()}}
+{\footnotesize\ttfamily \label{class_a_weapon_aad968ecead9f8dfadce798c02f2de6c1} 
+bool AWeapon\+::\+Actor\+Is\+Same\+Type (\begin{DoxyParamCaption}\item[{AActor \texorpdfstring{$\ast$}{*}}]{Other\+Actor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_aad968ecead9f8dfadce798c02f2de6c1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_a85b01f5b76cb7c94714c53d40a06a7de}\index{AWeapon@{AWeapon}!AttachMeshToSocket@{AttachMeshToSocket}}
+\index{AttachMeshToSocket@{AttachMeshToSocket}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{AttachMeshToSocket()}{AttachMeshToSocket()}}
+{\footnotesize\ttfamily \label{class_a_weapon_a85b01f5b76cb7c94714c53d40a06a7de} 
+void AWeapon\+::\+Attach\+Mesh\+To\+Socket (\begin{DoxyParamCaption}\item[{UScene\+Component \texorpdfstring{$\ast$}{*}}]{In\+Parent}{, }\item[{const FName \&}]{In\+Socket\+Name}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_a85b01f5b76cb7c94714c53d40a06a7de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_ac7b8b5af7789df37243bd2391829d906}\index{AWeapon@{AWeapon}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_weapon_ac7b8b5af7789df37243bd2391829d906} 
+void AWeapon\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_item_ab11b1af717ab700069f202507d36b5c4}{AItem}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_ac7b8b5af7789df37243bd2391829d906_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_a2e853e8683d2423cb5090620452cb552}\index{AWeapon@{AWeapon}!CreateFields@{CreateFields}}
+\index{CreateFields@{CreateFields}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{CreateFields()}{CreateFields()}}
+{\footnotesize\ttfamily \label{class_a_weapon_a2e853e8683d2423cb5090620452cb552} 
+void AWeapon\+::\+Create\+Fields (\begin{DoxyParamCaption}\item[{const FVector \&}]{Field\+Location}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_a2e853e8683d2423cb5090620452cb552_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_a6965dcb7fa40f22563baf649c06aa888}\index{AWeapon@{AWeapon}!DeactivateEmbers@{DeactivateEmbers}}
+\index{DeactivateEmbers@{DeactivateEmbers}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{DeactivateEmbers()}{DeactivateEmbers()}}
+{\footnotesize\ttfamily \label{class_a_weapon_a6965dcb7fa40f22563baf649c06aa888} 
+void AWeapon\+::\+Deactivate\+Embers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_a6965dcb7fa40f22563baf649c06aa888_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_af5760c894c6e01463984fc0855795401}\index{AWeapon@{AWeapon}!DisableSphereCollision@{DisableSphereCollision}}
+\index{DisableSphereCollision@{DisableSphereCollision}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{DisableSphereCollision()}{DisableSphereCollision()}}
+{\footnotesize\ttfamily \label{class_a_weapon_af5760c894c6e01463984fc0855795401} 
+void AWeapon\+::\+Disable\+Sphere\+Collision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_af5760c894c6e01463984fc0855795401_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_ad415900448969b98eebf669fc09c2c57}\index{AWeapon@{AWeapon}!Equip@{Equip}}
+\index{Equip@{Equip}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{Equip()}{Equip()}}
+{\footnotesize\ttfamily \label{class_a_weapon_ad415900448969b98eebf669fc09c2c57} 
+void AWeapon\+::\+Equip (\begin{DoxyParamCaption}\item[{UScene\+Component \texorpdfstring{$\ast$}{*}}]{In\+Parent}{, }\item[{FName}]{In\+Socket\+Name}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{New\+Owner}{, }\item[{APawn \texorpdfstring{$\ast$}{*}}]{New\+Instigator}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_ad415900448969b98eebf669fc09c2c57_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_ad415900448969b98eebf669fc09c2c57_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_a6d07b684123e49d6fe622cc3b834ccd0}\index{AWeapon@{AWeapon}!ExecuteGetHit@{ExecuteGetHit}}
+\index{ExecuteGetHit@{ExecuteGetHit}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{ExecuteGetHit()}{ExecuteGetHit()}}
+{\footnotesize\ttfamily \label{class_a_weapon_a6d07b684123e49d6fe622cc3b834ccd0} 
+void AWeapon\+::\+Execute\+Get\+Hit (\begin{DoxyParamCaption}\item[{FHit\+Result \&}]{Box\+Hit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_a6d07b684123e49d6fe622cc3b834ccd0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_ac12a8834711db517a4e9c5e3f319dbca}\index{AWeapon@{AWeapon}!GetWeaponBox@{GetWeaponBox}}
+\index{GetWeaponBox@{GetWeaponBox}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{GetWeaponBox()}{GetWeaponBox()}}
+{\footnotesize\ttfamily \label{class_a_weapon_ac12a8834711db517a4e9c5e3f319dbca} 
+FORCEINLINE UBox\+Component \texorpdfstring{$\ast$}{*} AWeapon\+::\+Get\+Weapon\+Box (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_ac12a8834711db517a4e9c5e3f319dbca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_a0209db7112fc1907adcef182dac3ee2c}\index{AWeapon@{AWeapon}!OnBoxOverlap@{OnBoxOverlap}}
+\index{OnBoxOverlap@{OnBoxOverlap}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{OnBoxOverlap()}{OnBoxOverlap()}}
+{\footnotesize\ttfamily \label{class_a_weapon_a0209db7112fc1907adcef182dac3ee2c} 
+void AWeapon\+::\+On\+Box\+Overlap (\begin{DoxyParamCaption}\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Overlapped\+Component}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Other\+Actor}{, }\item[{UPrimitive\+Component \texorpdfstring{$\ast$}{*}}]{Other\+Comp}{, }\item[{int32}]{Other\+Body\+Index}{, }\item[{bool}]{b\+From\+Sweep}{, }\item[{const FHit\+Result \&}]{Sweep\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_a0209db7112fc1907adcef182dac3ee2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_a0209db7112fc1907adcef182dac3ee2c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_weapon_ad60eb2506690f7a9b834a6827650b7a5}\index{AWeapon@{AWeapon}!PlayEquipSound@{PlayEquipSound}}
+\index{PlayEquipSound@{PlayEquipSound}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{PlayEquipSound()}{PlayEquipSound()}}
+{\footnotesize\ttfamily \label{class_a_weapon_ad60eb2506690f7a9b834a6827650b7a5} 
+void AWeapon\+::\+Play\+Equip\+Sound (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_weapon_ad60eb2506690f7a9b834a6827650b7a5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_weapon_a14b26fe9285dfe0a0b0ffda1ba8e8c68}\index{AWeapon@{AWeapon}!IgnoreActors@{IgnoreActors}}
+\index{IgnoreActors@{IgnoreActors}!AWeapon@{AWeapon}}
+\doxysubsubsection{\texorpdfstring{IgnoreActors}{IgnoreActors}}
+{\footnotesize\ttfamily \label{class_a_weapon_a14b26fe9285dfe0a0b0ffda1ba8e8c68} 
+TArray$<$AActor\texorpdfstring{$\ast$}{*}$>$ AWeapon\+::\+Ignore\+Actors}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Items/\+Weapons/\mbox{\hyperlink{_weapon_8h}{Weapon.\+h}}\item 
+Private/\+Items/\+Weapons/\mbox{\hyperlink{_weapon_8cpp}{Weapon.\+cpp}}\end{DoxyCompactItemize}

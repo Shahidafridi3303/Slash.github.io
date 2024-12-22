@@ -1,0 +1,32 @@
+\doxysection{Slash\+HUD.\+h}
+\hypertarget{_slash_h_u_d_8h_source}{}\label{_slash_h_u_d_8h_source}\index{Public/HUD/SlashHUD.h@{Public/HUD/SlashHUD.h}}
+\mbox{\hyperlink{_slash_h_u_d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}GameFramework/HUD.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SlashHUD.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_slash_overlay}{USlashOverlay}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ UCLASS()}
+\DoxyCodeLine{00015\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_slash_h_u_d}{ASlashHUD}}\ :\ public\ AHUD}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00018\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \mbox{\hyperlink{class_slash}{Slash}})}
+\DoxyCodeLine{00023\ \ \ \ \ TSubclassOf<USlashOverlay>\ SlashOverlayClass;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_u_slash_overlay}{USlashOverlay}}*\ SlashOverlay;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ FORCEINLINE\ \mbox{\hyperlink{class_u_slash_overlay}{USlashOverlay}}*\ \mbox{\hyperlink{class_a_slash_h_u_d_a3ea67674a7cfd2b8e9de2b6bb530da01}{GetSlashOverlay}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ SlashOverlay;\ \}}
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

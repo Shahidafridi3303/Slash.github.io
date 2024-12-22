@@ -1,0 +1,5 @@
+<map id="AEnemy::SpawnSoul" name="AEnemy::SpawnSoul">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$class_a_soul.html#aa69583215dfc59b092cd470f20b0c93c" title=" " alt="" coords="199,5,316,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+</map>

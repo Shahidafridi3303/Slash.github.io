@@ -1,0 +1,30 @@
+\doxysection{Hit\+Interface.\+h}
+\hypertarget{_hit_interface_8h_source}{}\label{_hit_interface_8h_source}\index{Public/Interfaces/HitInterface.h@{Public/Interfaces/HitInterface.h}}
+\mbox{\hyperlink{_hit_interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}UObject/Interface.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}HitInterface.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ This\ class\ does\ not\ need\ to\ be\ modified.}}
+\DoxyCodeLine{00010\ UINTERFACE(MinimalAPI)}
+\DoxyCodeLine{00011\ class\ \mbox{\hyperlink{class_u_hit_interface}{UHitInterface}}\ :\ public\ UInterface}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }SLASH\_API\ \mbox{\hyperlink{class_i_hit_interface}{IHitInterface}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Add\ interface\ functions\ to\ this\ class.\ This\ is\ the\ class\ that\ will\ be\ inherited\ to\ implement\ this\ interface.}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ UFUNCTION(BlueprintNativeEvent)}
+\DoxyCodeLine{00026\ \ \ \ \ void\ GetHit(const\ FVector\&\ ImpactPoint,\ AActor*\ Hitter);}
+\DoxyCodeLine{00027\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+<map id="Public/HUD/SlashOverlay.h" name="Public/HUD/SlashOverlay.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="121,5,304,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,35,100,75,98,71,185,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,80,291,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,33,215,64,210,64,210,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="316,80,486,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,30,354,71,353,76,244,35"/>
+</map>

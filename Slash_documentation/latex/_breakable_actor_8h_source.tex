@@ -1,0 +1,43 @@
+\doxysection{Breakable\+Actor.\+h}
+\hypertarget{_breakable_actor_8h_source}{}\label{_breakable_actor_8h_source}\index{Public/BreakableActor/BreakableActor.h@{Public/BreakableActor/BreakableActor.h}}
+\mbox{\hyperlink{_breakable_actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}GameFramework/Actor.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hit_interface_8h}{Interfaces/HitInterface.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}BreakableActor.generated.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }UGeometryCollectionComponent;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_breakable_actor}{ABreakableActor}}\ :\ public\ AActor,\ public\ \mbox{\hyperlink{class_i_hit_interface}{IHitInterface}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_a_breakable_actor}{ABreakableActor}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ GetHit\_Implementation(\textcolor{keyword}{const}\ FVector\&\ ImpactPoint,\ AActor*\ Hitter)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00026\ \ \ \ \ UGeometryCollectionComponent*\ GeometryCollection;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ BlueprintReadWrite)}
+\DoxyCodeLine{00029\ \ \ \ \ class\ UCapsuleComponent*\ Capsule;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ private:}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Breakable\ Properties"{})}
+\DoxyCodeLine{00034\ \ \ \ \ TArray<TSubclassOf<class\ \mbox{\hyperlink{class_a_treasure}{ATreasure}}>>\ TreasureClasses;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ bBroken\ =\ false;}
+\DoxyCodeLine{00037\ \};}
+
+\end{DoxyCode}

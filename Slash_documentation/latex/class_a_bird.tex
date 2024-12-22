@@ -1,0 +1,162 @@
+\doxysection{ABird Class Reference}
+\hypertarget{class_a_bird}{}\label{class_a_bird}\index{ABird@{ABird}}
+
+
+{\ttfamily \#include $<$Bird.\+h$>$}
+
+
+
+Inheritance diagram for ABird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{class_a_bird__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ABird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{class_a_bird__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_bird_a7c7fa7340fb8765432da89cdbcf5b989}{ABird}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_bird_ac9c0e8ced312cc4cc562b5aee1bdb413}{Tick}} (float Delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_bird_a2c4112ab4aa064ec012448880b3390c4}{Setup\+Player\+Input\+Component}} (class UInput\+Component \texorpdfstring{$\ast$}{*}Player\+Input\+Component) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+USpring\+Arm\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_bird_aa76d704a6e0d352991baffe501b180b4}{Camera\+Boom}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_bird_a101f8329148f6aff2eaa509a8e02882d}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_bird_ac2ad0624767293f59dd023141867cf9f}{Move\+Forward}} (float Value)
+\item 
+void \mbox{\hyperlink{class_a_bird_a5c6e708e0c5add2f8fc29176507ac084}{Move\+Right}} (float Value)
+\item 
+void \mbox{\hyperlink{class_a_bird_a085b8e922c1327dde51097efc9406363}{Turn}} (float Value)
+\item 
+void \mbox{\hyperlink{class_a_bird_ae7a7dd2c217e4b02a7ba17731f2cccad}{Look\+Up}} (float Value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_bird_a7c7fa7340fb8765432da89cdbcf5b989}\index{ABird@{ABird}!ABird@{ABird}}
+\index{ABird@{ABird}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{ABird()}{ABird()}}
+{\footnotesize\ttfamily \label{class_a_bird_a7c7fa7340fb8765432da89cdbcf5b989} 
+ABird\+::\+ABird (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_bird_a101f8329148f6aff2eaa509a8e02882d}\index{ABird@{ABird}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_bird_a101f8329148f6aff2eaa509a8e02882d} 
+void ABird\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_bird_ae7a7dd2c217e4b02a7ba17731f2cccad}\index{ABird@{ABird}!LookUp@{LookUp}}
+\index{LookUp@{LookUp}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{LookUp()}{LookUp()}}
+{\footnotesize\ttfamily \label{class_a_bird_ae7a7dd2c217e4b02a7ba17731f2cccad} 
+void ABird\+::\+Look\+Up (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_bird_ae7a7dd2c217e4b02a7ba17731f2cccad_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_bird_ac2ad0624767293f59dd023141867cf9f}\index{ABird@{ABird}!MoveForward@{MoveForward}}
+\index{MoveForward@{MoveForward}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{MoveForward()}{MoveForward()}}
+{\footnotesize\ttfamily \label{class_a_bird_ac2ad0624767293f59dd023141867cf9f} 
+void ABird\+::\+Move\+Forward (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_bird_ac2ad0624767293f59dd023141867cf9f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_bird_a5c6e708e0c5add2f8fc29176507ac084}\index{ABird@{ABird}!MoveRight@{MoveRight}}
+\index{MoveRight@{MoveRight}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{MoveRight()}{MoveRight()}}
+{\footnotesize\ttfamily \label{class_a_bird_a5c6e708e0c5add2f8fc29176507ac084} 
+void ABird\+::\+Move\+Right (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_bird_a5c6e708e0c5add2f8fc29176507ac084_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_bird_a2c4112ab4aa064ec012448880b3390c4}\index{ABird@{ABird}!SetupPlayerInputComponent@{SetupPlayerInputComponent}}
+\index{SetupPlayerInputComponent@{SetupPlayerInputComponent}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{SetupPlayerInputComponent()}{SetupPlayerInputComponent()}}
+{\footnotesize\ttfamily \label{class_a_bird_a2c4112ab4aa064ec012448880b3390c4} 
+void ABird\+::\+Setup\+Player\+Input\+Component (\begin{DoxyParamCaption}\item[{class UInput\+Component \texorpdfstring{$\ast$}{*}}]{Player\+Input\+Component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_bird_a2c4112ab4aa064ec012448880b3390c4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_bird_ac9c0e8ced312cc4cc562b5aee1bdb413}\index{ABird@{ABird}!Tick@{Tick}}
+\index{Tick@{Tick}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_bird_ac9c0e8ced312cc4cc562b5aee1bdb413} 
+void ABird\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_bird_a085b8e922c1327dde51097efc9406363}\index{ABird@{ABird}!Turn@{Turn}}
+\index{Turn@{Turn}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{Turn()}{Turn()}}
+{\footnotesize\ttfamily \label{class_a_bird_a085b8e922c1327dde51097efc9406363} 
+void ABird\+::\+Turn (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_bird_a085b8e922c1327dde51097efc9406363_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_bird_aa76d704a6e0d352991baffe501b180b4}\index{ABird@{ABird}!CameraBoom@{CameraBoom}}
+\index{CameraBoom@{CameraBoom}!ABird@{ABird}}
+\doxysubsubsection{\texorpdfstring{CameraBoom}{CameraBoom}}
+{\footnotesize\ttfamily \label{class_a_bird_aa76d704a6e0d352991baffe501b180b4} 
+USpring\+Arm\+Component\texorpdfstring{$\ast$}{*} ABird\+::\+Camera\+Boom}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Pawns/\mbox{\hyperlink{_bird_8h}{Bird.\+h}}\item 
+Private/\+Pawns/\mbox{\hyperlink{_bird_8cpp}{Bird.\+cpp}}\end{DoxyCompactItemize}

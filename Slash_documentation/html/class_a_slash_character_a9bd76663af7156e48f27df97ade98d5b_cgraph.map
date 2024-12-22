@@ -1,0 +1,9 @@
+<map id="ASlashCharacter::AddSoulsAndHealth" name="ASlashCharacter::AddSoulsAndHealth">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,190,91"/>
+<area shape="rect" id="Node000002" href="$class_a_base_character.html#ab607d7b59c88c7e6020651393a3aab94" title=" " alt="" coords="238,5,424,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,47,251,33,252,38,191,52"/>
+<area shape="rect" id="Node000003" href="$class_a_soul.html#a7d8161bf7ed1bbfe315d1aef11857dfe" title=" " alt="" coords="272,56,390,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,67,256,67,256,72,190,72"/>
+<area shape="rect" id="Node000004" href="$class_u_slash_overlay.html#a348e23353709d9acc083ab281cbcb754" title=" " alt="" coords="246,107,416,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,87,252,100,251,105,189,92"/>
+</map>

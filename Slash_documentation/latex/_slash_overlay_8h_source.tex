@@ -1,0 +1,38 @@
+\doxysection{Slash\+Overlay.\+h}
+\hypertarget{_slash_overlay_8h_source}{}\label{_slash_overlay_8h_source}\index{Public/HUD/SlashOverlay.h@{Public/HUD/SlashOverlay.h}}
+\mbox{\hyperlink{_slash_overlay_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SlashOverlay.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ SLASH\_API\ \mbox{\hyperlink{class_u_slash_overlay}{USlashOverlay}}\ :\ public\ UUserWidget}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ SetHealthBarPercent(\textcolor{keywordtype}{float}\ Percent);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ SetStaminaBarPercent(\textcolor{keywordtype}{float}\ Percent);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ SetGold(int32\ Gold);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ SetSouls(int32\ Souls);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }UProgressBar*\ HealthProgressBar;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }UProgressBar*\ StaminaProgressBar;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{class\ }UTextBlock*\ GoldText;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{class\ }UTextBlock*\ SoulsText;}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

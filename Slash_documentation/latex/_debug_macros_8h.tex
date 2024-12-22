@@ -1,0 +1,150 @@
+\doxysection{Debug\+Macros.\+h File Reference}
+\hypertarget{_debug_macros_8h}{}\label{_debug_macros_8h}\index{DebugMacros.h@{DebugMacros.h}}
+{\ttfamily \#include "{}Draw\+Debug\+Helpers.\+h"{}}\newline
+Include dependency graph for Debug\+Macros.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{_debug_macros_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_debug_macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_a7145e808aeffbbb5829251e5c7c346e0}{DRAW\+\_\+\+SPHERE}}(Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_ad0e24b2e65d82ce70cd60587c5e2e273}{DRAW\+\_\+\+SPHERE\+\_\+\+COLOR}}(Location,  Color)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_ae2b20817274fdfea4b0c96045417db2a}{DRAW\+\_\+\+SPHERE\+\_\+\+Single\+Frame}}(Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_a37d2f24e3cf970c6c4ae091c2b1d1541}{DRAW\+\_\+\+LINE}}(Start\+Location,  End\+Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_a6949969093c089cd612ea9225e4f7463}{DRAW\+\_\+\+LINE\+\_\+\+Single\+Frame}}(Start\+Location,  End\+Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_a0f00a20e7d4a3dff86f06a73134e8796}{DRAW\+\_\+\+POINT}}(Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_abdd5ba5c7eb953174e886af0dfc8c685}{DRAW\+\_\+\+POINT\+\_\+\+Single\+Frame}}(Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_a70c3cc16857563d10a60e32824fddb12}{DRAW\+\_\+\+VECTOR}}(Start\+Location,  End\+Location)
+\item 
+\#define \mbox{\hyperlink{_debug_macros_8h_a3120c44020c80dada713a0e1915158ff}{DRAW\+\_\+\+VECTOR\+\_\+\+Single\+Frame}}(Start\+Location,  End\+Location)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_debug_macros_8h_a37d2f24e3cf970c6c4ae091c2b1d1541}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_LINE@{DRAW\_LINE}}
+\index{DRAW\_LINE@{DRAW\_LINE}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_LINE}{DRAW\_LINE}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_a37d2f24e3cf970c6c4ae091c2b1d1541} 
+\#define DRAW\+\_\+\+LINE(\begin{DoxyParamCaption}\item[{}]{Start\+Location}{, }\item[{}]{End\+Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (GetWorld())\ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ \textcolor{keyword}{true},\ -\/1.f,\ 0,\ 1.f);}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_a6949969093c089cd612ea9225e4f7463}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_LINE\_SingleFrame@{DRAW\_LINE\_SingleFrame}}
+\index{DRAW\_LINE\_SingleFrame@{DRAW\_LINE\_SingleFrame}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_LINE\_SingleFrame}{DRAW\_LINE\_SingleFrame}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_a6949969093c089cd612ea9225e4f7463} 
+\#define DRAW\+\_\+\+LINE\+\_\+\+Single\+Frame(\begin{DoxyParamCaption}\item[{}]{Start\+Location}{, }\item[{}]{End\+Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (GetWorld())\ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f,\ 0,\ 1.f);}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_a0f00a20e7d4a3dff86f06a73134e8796}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_POINT@{DRAW\_POINT}}
+\index{DRAW\_POINT@{DRAW\_POINT}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_POINT}{DRAW\_POINT}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_a0f00a20e7d4a3dff86f06a73134e8796} 
+\#define DRAW\+\_\+\+POINT(\begin{DoxyParamCaption}\item[{}]{Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (GetWorld())\ DrawDebugPoint(GetWorld(),\ Location,\ 15.f,\ FColor::Red,\ \textcolor{keyword}{true});}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_abdd5ba5c7eb953174e886af0dfc8c685}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_POINT\_SingleFrame@{DRAW\_POINT\_SingleFrame}}
+\index{DRAW\_POINT\_SingleFrame@{DRAW\_POINT\_SingleFrame}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_POINT\_SingleFrame}{DRAW\_POINT\_SingleFrame}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_abdd5ba5c7eb953174e886af0dfc8c685} 
+\#define DRAW\+\_\+\+POINT\+\_\+\+Single\+Frame(\begin{DoxyParamCaption}\item[{}]{Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (GetWorld())\ DrawDebugPoint(GetWorld(),\ Location,\ 15.f,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f);}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_a7145e808aeffbbb5829251e5c7c346e0}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_SPHERE@{DRAW\_SPHERE}}
+\index{DRAW\_SPHERE@{DRAW\_SPHERE}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_SPHERE}{DRAW\_SPHERE}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_a7145e808aeffbbb5829251e5c7c346e0} 
+\#define DRAW\+\_\+\+SPHERE(\begin{DoxyParamCaption}\item[{}]{Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (GetWorld())\ DrawDebugSphere(GetWorld(),\ Location,\ 25.f,\ 12,\ FColor::Red,\ \textcolor{keyword}{true});}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_ad0e24b2e65d82ce70cd60587c5e2e273}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_SPHERE\_COLOR@{DRAW\_SPHERE\_COLOR}}
+\index{DRAW\_SPHERE\_COLOR@{DRAW\_SPHERE\_COLOR}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_SPHERE\_COLOR}{DRAW\_SPHERE\_COLOR}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_ad0e24b2e65d82ce70cd60587c5e2e273} 
+\#define DRAW\+\_\+\+SPHERE\+\_\+\+COLOR(\begin{DoxyParamCaption}\item[{}]{Location}{, }\item[{}]{Color}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DrawDebugSphere(GetWorld(),\ Location,\ 8.f,\ 12,\ Color,\ \textcolor{keyword}{false},\ 5.f);}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_ae2b20817274fdfea4b0c96045417db2a}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_SPHERE\_SingleFrame@{DRAW\_SPHERE\_SingleFrame}}
+\index{DRAW\_SPHERE\_SingleFrame@{DRAW\_SPHERE\_SingleFrame}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_SPHERE\_SingleFrame}{DRAW\_SPHERE\_SingleFrame}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_ae2b20817274fdfea4b0c96045417db2a} 
+\#define DRAW\+\_\+\+SPHERE\+\_\+\+Single\+Frame(\begin{DoxyParamCaption}\item[{}]{Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (GetWorld())\ DrawDebugSphere(GetWorld(),\ Location,\ 25.f,\ 12,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f);}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_a70c3cc16857563d10a60e32824fddb12}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_VECTOR@{DRAW\_VECTOR}}
+\index{DRAW\_VECTOR@{DRAW\_VECTOR}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_VECTOR}{DRAW\_VECTOR}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_a70c3cc16857563d10a60e32824fddb12} 
+\#define DRAW\+\_\+\+VECTOR(\begin{DoxyParamCaption}\item[{}]{Start\+Location}{, }\item[{}]{End\+Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(GetWorld())\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ \textcolor{keyword}{true},\ -\/1.f,\ 0,\ 1.f);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ DrawDebugPoint(GetWorld(),\ EndLocation,\ 15.f,\ FColor::Red,\ \textcolor{keyword}{true});\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{_debug_macros_8h_a3120c44020c80dada713a0e1915158ff}\index{DebugMacros.h@{DebugMacros.h}!DRAW\_VECTOR\_SingleFrame@{DRAW\_VECTOR\_SingleFrame}}
+\index{DRAW\_VECTOR\_SingleFrame@{DRAW\_VECTOR\_SingleFrame}!DebugMacros.h@{DebugMacros.h}}
+\doxysubsubsection{\texorpdfstring{DRAW\_VECTOR\_SingleFrame}{DRAW\_VECTOR\_SingleFrame}}
+{\footnotesize\ttfamily \label{_debug_macros_8h_a3120c44020c80dada713a0e1915158ff} 
+\#define DRAW\+\_\+\+VECTOR\+\_\+\+Single\+Frame(\begin{DoxyParamCaption}\item[{}]{Start\+Location}{, }\item[{}]{End\+Location}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(GetWorld())\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ DrawDebugLine(GetWorld(),\ StartLocation,\ EndLocation,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f,\ 0,\ 1.f);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ DrawDebugPoint(GetWorld(),\ EndLocation,\ 15.f,\ FColor::Red,\ \textcolor{keyword}{false},\ -\/1.f);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}

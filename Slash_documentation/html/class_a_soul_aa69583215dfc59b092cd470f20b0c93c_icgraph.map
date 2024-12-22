@@ -1,0 +1,7 @@
+<map id="ASoul::SetSouls" name="ASoul::SetSouls">
+<area shape="rect" id="Node000001" title=" " alt="" coords="442,5,559,32"/>
+<area shape="rect" id="Node000002" href="$class_a_enemy.html#aab7540cc2b55420e6ed81222f8bb6b34" title=" " alt="" coords="249,5,394,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="426,21,394,21,394,16,426,16"/>
+<area shape="rect" id="Node000003" href="$class_a_enemy.html#a668612babab6856251c932b210558940" title=" " alt="" coords="5,5,201,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,21,201,21,201,16,233,16"/>
+</map>

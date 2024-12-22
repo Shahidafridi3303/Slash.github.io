@@ -1,0 +1,114 @@
+\doxysection{Base\+Character.\+h}
+\hypertarget{_base_character_8h_source}{}\label{_base_character_8h_source}\index{Public/Characters/BaseCharacter.h@{Public/Characters/BaseCharacter.h}}
+\mbox{\hyperlink{_base_character_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}GameFramework/Character.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hit_interface_8h}{Interfaces/HitInterface.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_types_8h}{Characters/CharacterTypes.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}BaseCharacter.generated.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_weapon}{AWeapon}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }UAttributeComponent;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }UAnimMontage;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ UCLASS()}
+\DoxyCodeLine{00016\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_base_character}{ABaseCharacter}}\ :\ public\ ACharacter,\ public\ \mbox{\hyperlink{class_i_hit_interface}{IHitInterface}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_a_base_character}{ABaseCharacter}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ GetHit\_Implementation(\textcolor{keyword}{const}\ FVector\&\ ImpactPoint,\ AActor*\ Hitter)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Attack();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ UFUNCTION(BlueprintNativeEvent)}
+\DoxyCodeLine{00032\ \ \ \ \ void\ Die();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ DirectionalHitReact(const\ FVector\&\ ImpactPoint);}
+\DoxyCodeLine{00035\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ HandleDamage(\textcolor{keywordtype}{float}\ DamageAmount);}
+\DoxyCodeLine{00036\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ AddHealth(\textcolor{keywordtype}{float}\ Amount);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ PlayHitSound(const\ FVector\&\ ImpactPoint);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ SpawnHitParticles(const\ FVector\&\ ImpactPoint);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ DisableCapsule();}
+\DoxyCodeLine{00040\ \ \ \ \ virtual\ \textcolor{keywordtype}{bool}\ CanAttack();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsAlive();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ DisableMeshCollision();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ PlayHitReactMontage(const\ FName\&\ SectionName);}
+\DoxyCodeLine{00046\ \ \ \ \ virtual\ int32\ PlayAttackMontage();}
+\DoxyCodeLine{00047\ \ \ \ \ virtual\ int32\ PlayDeathMontage();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ StopAttackMontage();}
+\DoxyCodeLine{00049\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ PlayDodgeMontage();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00052\ \ \ \ \ FVector\ GetTranslationWarpTarget();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00055\ \ \ \ \ FVector\ GetRotationWarpTarget();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00058\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ AttackEnd();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00061\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ DodgeEnd();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ SetWeaponCollisionEnabled(ECollisionEnabled::Type\ CollisionEnabled);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ Category\ =\ Weapon)}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{class_a_weapon}{AWeapon}}*\ EquippedWeapon;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ BlueprintReadOnly,\ meta\ =\ (AllowPrivateAccess\ =\ "{}true"{}))}
+\DoxyCodeLine{00070\ \ \ \ \ UAttributeComponent*\ Attributes;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Combat)}
+\DoxyCodeLine{00073\ \ \ \ \ AActor*\ CombatTarget;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{double}\ WarpTargetDistance\ =\ 75.f;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ UPROPERTY(BlueprintReadOnly)}
+\DoxyCodeLine{00079\ \ \ \ \ TEnumAsByte<\mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeathPose}}>\ DeathPose;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ private:}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ PlayMontageSection(UAnimMontage*\ Montage,\ const\ FName\&\ SectionName);}
+\DoxyCodeLine{00083\ \ \ \ \ int32\ PlayRandomMontageSection(UAnimMontage*\ Montage,\ const\ TArray<FName>\&\ SectionNames);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00086\ \ \ \ \ USoundBase*\ HitSound;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00089\ \ \ \ \ UParticleSystem*\ HitParticles;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ Combat)}
+\DoxyCodeLine{00092\ \ \ \ \ UAnimMontage*\ AttackMontage;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ Combat)}
+\DoxyCodeLine{00095\ \ \ \ \ UAnimMontage*\ HitReactMontage;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ Combat)}
+\DoxyCodeLine{00098\ \ \ \ \ UAnimMontage*\ DeathMontage;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ Combat)}
+\DoxyCodeLine{00101\ \ \ \ \ UAnimMontage*\ DodgeMontage;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00104\ \ \ \ \ TArray<FName>\ AttackMontageSections;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00107\ \ \ \ \ TArray<FName>\ DeathMontageSections;}
+\DoxyCodeLine{00108\ public:}
+\DoxyCodeLine{00109\ \ \ \ \ FORCEINLINE\ TEnumAsByte<\mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeathPose}}>\ GetDeathPose()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ DeathPose;\ \}}
+\DoxyCodeLine{00110\ \};}
+
+\end{DoxyCode}

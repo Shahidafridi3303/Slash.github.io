@@ -1,0 +1,5 @@
+<map id="AItem::SpawnPickupSystem" name="AItem::SpawnPickupSystem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,5,410,32"/>
+<area shape="rect" id="Node000002" href="$class_a_soul.html#a641e8ef544c8f9be7d86a5998f9d2c8c" title=" " alt="" coords="5,5,173,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,21,173,21,173,16,205,16"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="AItem::BeginPlay" name="AItem::BeginPlay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,129,57"/>
+<area shape="rect" id="Node000002" href="$class_a_item.html#ab916a2fafac02d2830ab1e13ef18349f" title=" " alt="" coords="177,5,367,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,34,161,30,161,35,129,39"/>
+<area shape="rect" id="Node000004" href="$class_a_item.html#adc27429329700e7475fadb6141ef6af8" title=" " alt="" coords="188,56,356,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,49,173,54,173,60,129,54"/>
+<area shape="rect" id="Node000003" href="$class_i_pickup_interface.html#a47d981a0908d9c3e2a818ef2304db46a" title=" " alt="" coords="415,31,654,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,25,400,28,399,34,367,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="356,59,400,54,400,60,356,64"/>
+</map>

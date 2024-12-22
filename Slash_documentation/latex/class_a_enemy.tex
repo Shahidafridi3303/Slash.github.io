@@ -1,0 +1,308 @@
+\doxysection{AEnemy Class Reference}
+\hypertarget{class_a_enemy}{}\label{class_a_enemy}\index{AEnemy@{AEnemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+
+
+Inheritance diagram for AEnemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_a_enemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for AEnemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_a_enemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_enemy_a78162cd7740ff2a86ba73ced9a4ae9be}{AEnemy}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a7ad3c69fabaf9310f1966c81c8bbb720}{Tick}} (float Delta\+Time) override
+\item 
+virtual float \mbox{\hyperlink{class_a_enemy_a08a7c6c84c5fc82e1aa0fc529c65918e}{Take\+Damage}} (float Damage\+Amount, struct FDamage\+Event const \&Damage\+Event, class AController \texorpdfstring{$\ast$}{*}Event\+Instigator, AActor \texorpdfstring{$\ast$}{*}Damage\+Causer) override
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a97e4c2e2f14df10b571ad3b3ecf8f45d}{Destroyed}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a2961058678a97508d91762d054763438}{Get\+Hit\+\_\+\+Implementation}} (const FVector \&Impact\+Point, AActor \texorpdfstring{$\ast$}{*}Hitter) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_base_character}{ABase\+Character}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_base_character_a2eefd65d26c2554026fe1810997d4d60}{ABase\+Character}} ()
+\item 
+FORCEINLINE TEnum\+As\+Byte$<$ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}} $>$ \mbox{\hyperlink{class_a_base_character_a0d93c16c6440415ac40bac064dcf8c16}{Get\+Death\+Pose}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_hit_interface}{IHit\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_i_hit_interface_ac535bfda69dd3ee9bddc613326a6880e}{Get\+Hit}} (const FVector \&Impact\+Point, AActor \texorpdfstring{$\ast$}{*}Hitter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_abd845c5787bc005ae01686635f7f3fba}{Begin\+Play}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a668612babab6856251c932b210558940}{Die\+\_\+\+Implementation}} () override
+\item 
+void \mbox{\hyperlink{class_a_enemy_aab7540cc2b55420e6ed81222f8bb6b34}{Spawn\+Soul}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a2cdabec54e5732bdeae55847767e940c}{Attack}} () override
+\item 
+virtual bool \mbox{\hyperlink{class_a_enemy_a178b637e9fb8c7e2df5f4bfff7acd0a5}{Can\+Attack}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a48eaf774b181eeca7a16593522f08d6b}{Attack\+End}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_enemy_a76df7fdff82380d35a286d37d2537c11}{Handle\+Damage}} (float Damage\+Amount) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_a_base_character}{ABase\+Character}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_base_character_a83566f04974ce53cdb4486820244bc6d}{Die}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_afc12149c67b4dba7267ff74d652ad28f}{Directional\+Hit\+React}} (const FVector \&Impact\+Point)
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_ab607d7b59c88c7e6020651393a3aab94}{Add\+Health}} (float Amount)
+\item 
+void \mbox{\hyperlink{class_a_base_character_aa7262d4c581d80140196ad91a19a4b01}{Play\+Hit\+Sound}} (const FVector \&Impact\+Point)
+\item 
+void \mbox{\hyperlink{class_a_base_character_a7687fa128f6265a505aad8474ead5d61}{Spawn\+Hit\+Particles}} (const FVector \&Impact\+Point)
+\item 
+void \mbox{\hyperlink{class_a_base_character_ae5fc84f5b42b67c188175ced53c36a40}{Disable\+Capsule}} ()
+\item 
+bool \mbox{\hyperlink{class_a_base_character_ac82b1413264b6fac92a7fb6ebed7d45b}{Is\+Alive}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a09a1da48f2e294ec680acd859cf0be45}{Disable\+Mesh\+Collision}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a4c80385741b19725cda1f29ce1e6fc71}{Play\+Hit\+React\+Montage}} (const FName \&Section\+Name)
+\item 
+virtual int32 \mbox{\hyperlink{class_a_base_character_a0619ca62bc9ffb71411f8a0f00ea00a1}{Play\+Attack\+Montage}} ()
+\item 
+virtual int32 \mbox{\hyperlink{class_a_base_character_acf58b727d6b78cb6db1f76d97ed5c1cc}{Play\+Death\+Montage}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_af91f253a0db9a438bac5ed95320a0fe1}{Stop\+Attack\+Montage}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_a98e4d74fcb872de09913841a77d8ebae}{Play\+Dodge\+Montage}} ()
+\item 
+FVector \mbox{\hyperlink{class_a_base_character_a1300212d41894657cf9b67723b31f76e}{Get\+Translation\+Warp\+Target}} ()
+\item 
+FVector \mbox{\hyperlink{class_a_base_character_a65586a24de03c50142d0e7e73fecb43d}{Get\+Rotation\+Warp\+Target}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_base_character_abc7045a9d31c0e662b580fedcda09916}{Dodge\+End}} ()
+\item 
+void \mbox{\hyperlink{class_a_base_character_a2a5e8c823d81821609bcd1b956c3a457}{Set\+Weapon\+Collision\+Enabled}} (ECollision\+Enabled\+::\+Type Collision\+Enabled)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_character_types_8h_aa610fff56c27064ca4b787487321b2bf}{EEnemy\+State}} \mbox{\hyperlink{class_a_enemy_adde850fca8cefd0e62bdc623754af042}{Enemy\+State}} = EEnemy\+State\+::\+EES\+\_\+\+Patrolling
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_a_base_character}{ABase\+Character}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_weapon}{AWeapon}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_base_character_ae8d6dbfcdf56a15c6993db76a63a7956}{Equipped\+Weapon}}
+\item 
+UAttribute\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_base_character_aaaf84faf5bcdde4d3ff05a0087123710}{Attributes}}
+\item 
+AActor \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_base_character_a1ed76720bb6ae4d441485a0000e7e5ce}{Combat\+Target}}
+\item 
+double \mbox{\hyperlink{class_a_base_character_af449388ca89ad6958dcd08abc879be0d}{Warp\+Target\+Distance}} = 75.f
+\item 
+TEnum\+As\+Byte$<$ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeath\+Pose}} $>$ \mbox{\hyperlink{class_a_base_character_ae4ad7162d1657dc69586e2ffffc9baeb}{Death\+Pose}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_enemy_a78162cd7740ff2a86ba73ced9a4ae9be}\index{AEnemy@{AEnemy}!AEnemy@{AEnemy}}
+\index{AEnemy@{AEnemy}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{AEnemy()}{AEnemy()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a78162cd7740ff2a86ba73ced9a4ae9be} 
+AEnemy\+::\+AEnemy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_enemy_a2cdabec54e5732bdeae55847767e940c}\index{AEnemy@{AEnemy}!Attack@{Attack}}
+\index{Attack@{Attack}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a2cdabec54e5732bdeae55847767e940c} 
+void AEnemy\+::\+Attack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_a8fdb5a696ac22a942339f2ef5238a4dc}{ABase\+Character}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_a_enemy_a2cdabec54e5732bdeae55847767e940c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_enemy_a48eaf774b181eeca7a16593522f08d6b}\index{AEnemy@{AEnemy}!AttackEnd@{AttackEnd}}
+\index{AttackEnd@{AttackEnd}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{AttackEnd()}{AttackEnd()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a48eaf774b181eeca7a16593522f08d6b} 
+void AEnemy\+::\+Attack\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_abdeed2ef33c6b68aaf2a8f0f3e93c231}{ABase\+Character}}.
+
+\Hypertarget{class_a_enemy_abd845c5787bc005ae01686635f7f3fba}\index{AEnemy@{AEnemy}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_enemy_abd845c5787bc005ae01686635f7f3fba} 
+void AEnemy\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+$<$/\+IHit\+Interface$>$ $<$\+AActor$>$ 
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_a2d83630c5ef87b8b4956456c422292af}{ABase\+Character}}.
+
+\Hypertarget{class_a_enemy_a178b637e9fb8c7e2df5f4bfff7acd0a5}\index{AEnemy@{AEnemy}!CanAttack@{CanAttack}}
+\index{CanAttack@{CanAttack}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{CanAttack()}{CanAttack()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a178b637e9fb8c7e2df5f4bfff7acd0a5} 
+bool AEnemy\+::\+Can\+Attack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_a7fac2c4a069d8e2f2d85d1d3548dd7ba}{ABase\+Character}}.
+
+\Hypertarget{class_a_enemy_a97e4c2e2f14df10b571ad3b3ecf8f45d}\index{AEnemy@{AEnemy}!Destroyed@{Destroyed}}
+\index{Destroyed@{Destroyed}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{Destroyed()}{Destroyed()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a97e4c2e2f14df10b571ad3b3ecf8f45d} 
+void AEnemy\+::\+Destroyed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_enemy_a668612babab6856251c932b210558940}\index{AEnemy@{AEnemy}!Die\_Implementation@{Die\_Implementation}}
+\index{Die\_Implementation@{Die\_Implementation}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{Die\_Implementation()}{Die\_Implementation()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a668612babab6856251c932b210558940} 
+void AEnemy\+::\+Die\+\_\+\+Implementation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+$<$/\+AActor$>$ $<$\+ABase\+Character$>$ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_a668612babab6856251c932b210558940_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_enemy_a2961058678a97508d91762d054763438}\index{AEnemy@{AEnemy}!GetHit\_Implementation@{GetHit\_Implementation}}
+\index{GetHit\_Implementation@{GetHit\_Implementation}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{GetHit\_Implementation()}{GetHit\_Implementation()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a2961058678a97508d91762d054763438} 
+void AEnemy\+::\+Get\+Hit\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{const FVector \&}]{Impact\+Point}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Hitter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+$<$/\+AActor$>$ $<$\+IHit\+Interface$>$ 
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_aceb150770417fe988609ec9fe50187d6}{ABase\+Character}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_a2961058678a97508d91762d054763438_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_enemy_a76df7fdff82380d35a286d37d2537c11}\index{AEnemy@{AEnemy}!HandleDamage@{HandleDamage}}
+\index{HandleDamage@{HandleDamage}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{HandleDamage()}{HandleDamage()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a76df7fdff82380d35a286d37d2537c11} 
+void AEnemy\+::\+Handle\+Damage (\begin{DoxyParamCaption}\item[{float}]{Damage\+Amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_aa0b9edbbd1d4269c85802aa46877cad4}{ABase\+Character}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_a76df7fdff82380d35a286d37d2537c11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_a76df7fdff82380d35a286d37d2537c11_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_enemy_aab7540cc2b55420e6ed81222f8bb6b34}\index{AEnemy@{AEnemy}!SpawnSoul@{SpawnSoul}}
+\index{SpawnSoul@{SpawnSoul}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{SpawnSoul()}{SpawnSoul()}}
+{\footnotesize\ttfamily \label{class_a_enemy_aab7540cc2b55420e6ed81222f8bb6b34} 
+void AEnemy\+::\+Spawn\+Soul (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_a_enemy_aab7540cc2b55420e6ed81222f8bb6b34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_aab7540cc2b55420e6ed81222f8bb6b34_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_enemy_a08a7c6c84c5fc82e1aa0fc529c65918e}\index{AEnemy@{AEnemy}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a08a7c6c84c5fc82e1aa0fc529c65918e} 
+float AEnemy\+::\+Take\+Damage (\begin{DoxyParamCaption}\item[{float}]{Damage\+Amount}{, }\item[{struct FDamage\+Event const \&}]{Damage\+Event}{, }\item[{class AController \texorpdfstring{$\ast$}{*}}]{Event\+Instigator}{, }\item[{AActor \texorpdfstring{$\ast$}{*}}]{Damage\+Causer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_enemy_a08a7c6c84c5fc82e1aa0fc529c65918e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_enemy_a7ad3c69fabaf9310f1966c81c8bbb720}\index{AEnemy@{AEnemy}!Tick@{Tick}}
+\index{Tick@{Tick}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_enemy_a7ad3c69fabaf9310f1966c81c8bbb720} 
+void AEnemy\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+$<$\+AActor$>$ 
+
+Reimplemented from \mbox{\hyperlink{class_a_base_character_a31c30172da69909d78ee54f537e4981a}{ABase\+Character}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_enemy_adde850fca8cefd0e62bdc623754af042}\index{AEnemy@{AEnemy}!EnemyState@{EnemyState}}
+\index{EnemyState@{EnemyState}!AEnemy@{AEnemy}}
+\doxysubsubsection{\texorpdfstring{EnemyState}{EnemyState}}
+{\footnotesize\ttfamily \label{class_a_enemy_adde850fca8cefd0e62bdc623754af042} 
+\mbox{\hyperlink{_character_types_8h_aa610fff56c27064ca4b787487321b2bf}{EEnemy\+State}} AEnemy\+::\+Enemy\+State = EEnemy\+State\+::\+EES\+\_\+\+Patrolling\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$/\+ABase\+Character$>$ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public/\+Enemy/\mbox{\hyperlink{_enemy_8h}{Enemy.\+h}}\item 
+Private/\+Enemy/\mbox{\hyperlink{_enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

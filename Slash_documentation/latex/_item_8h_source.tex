@@ -1,0 +1,85 @@
+\doxysection{Item.\+h}
+\hypertarget{_item_8h_source}{}\label{_item_8h_source}\index{Public/Items/Item.h@{Public/Items/Item.h}}
+\mbox{\hyperlink{_item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}GameFramework/Actor.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Item.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }USphereComponent;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }UNiagaraComponent;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItemState}}\ :\ uint8}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264afaa26f56bc8a0dc30cc11e09b01f2b11}{EIS\_Hovering}},}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264af139eedeab158d9943a68d9d8f7e2f3a}{EIS\_Equipped}}}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ UCLASS()}
+\DoxyCodeLine{00019\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_item}{AItem}}\ :\ public\ AActor}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_a_item}{AItem}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Sine\ Parameters"{}})}
+\DoxyCodeLine{00030\ \ \ \ \ float\ Amplitude\ =\ 0.25f;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ "{}Sine\ Parameters"{})}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{float}\ TimeConstant\ =\ 5.f;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ UFUNCTION(BlueprintPure)}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ TransformedSin();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ UFUNCTION(BlueprintPure)}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{float}\ TransformedCos();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ template<typename\ T>}
+\DoxyCodeLine{00042\ \ \ \ \ T\ Avg(T\ First,\ T\ Second);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00045\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ OnSphereOverlap(UPrimitiveComponent*\ OverlappedComponent,\ AActor*\ OtherActor,\ UPrimitiveComponent*\ OtherComp,\ int32\ OtherBodyIndex,\ \textcolor{keywordtype}{bool}\ bFromSweep,\ const\ FHitResult\&\ SweepResult);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00048\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ OnSphereEndOverlap(UPrimitiveComponent*\ OverlappedComponent,\ AActor*\ OtherActor,\ UPrimitiveComponent*\ OtherComp,\ int32\ OtherBodyIndex);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ SpawnPickupSystem();}
+\DoxyCodeLine{00051\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ SpawnPickupSound();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ BlueprintReadOnly)}
+\DoxyCodeLine{00054\ \ \ \ \ UStaticMeshComponent*\ ItemMesh;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItemState}}\ ItemState\ =\ \mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264}{EItemState}}::\mbox{\hyperlink{_item_8h_aa6a371e78af974fb9e88241796b5b264afaa26f56bc8a0dc30cc11e09b01f2b11}{EIS\_Hovering}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00059\ \ \ \ \ USphereComponent*\ Sphere;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ UPROPERTY(EditAnywhere)}
+\DoxyCodeLine{00062\ \ \ \ \ UNiagaraComponent*\ ItemEffect;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ UPROPERTY(EditAnywhere)}
+\DoxyCodeLine{00065\ \ \ \ \ USoundBase*\ PickupSound;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ private:}
+\DoxyCodeLine{00068\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ BlueprintReadOnly,\ meta\ =\ (AllowPrivateAccess\ =\ "{}true"{}))}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{float}\ RunningTime;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ UPROPERTY(EditAnywhere)}
+\DoxyCodeLine{00072\ \ \ \ \ class\ UNiagaraSystem*\ PickupEffect;}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ template<typename\ T>}
+\DoxyCodeLine{00076\ inline\ T\ \mbox{\hyperlink{class_a_item}{AItem}}::Avg(T\ First,\ T\ Second)}
+\DoxyCodeLine{00077\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ (First\ +\ Second)\ /\ 2;}
+\DoxyCodeLine{00079\ \}}
+
+\end{DoxyCode}

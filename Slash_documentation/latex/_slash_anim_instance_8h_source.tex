@@ -1,0 +1,44 @@
+\doxysection{Slash\+Anim\+Instance.\+h}
+\hypertarget{_slash_anim_instance_8h_source}{}\label{_slash_anim_instance_8h_source}\index{Public/Characters/SlashAnimInstance.h@{Public/Characters/SlashAnimInstance.h}}
+\mbox{\hyperlink{_slash_anim_instance_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Animation/AnimInstance.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_types_8h}{CharacterTypes.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}SlashAnimInstance.generated.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ UCLASS()}
+\DoxyCodeLine{00014\ class\ SLASH\_API\ \mbox{\hyperlink{class_u_slash_anim_instance}{USlashAnimInstance}}\ :\ public\ UAnimInstance}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ NativeInitializeAnimation()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ NativeUpdateAnimation(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ UPROPERTY(BlueprintReadOnly)}
+\DoxyCodeLine{00022\ \ \ \ \ class\ \mbox{\hyperlink{class_a_slash_character}{ASlashCharacter}}*\ SlashCharacter;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Movement)}
+\DoxyCodeLine{00025\ \ \ \ \ class\ UCharacterMovementComponent*\ SlashCharacterMovement;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Movement)}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ GroundSpeed;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Movement)}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsFalling;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Movement)}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{_character_types_8h_a1eee02477e4d3ad60fece0fbf612fdd5}{ECharacterState}}\ CharacterState;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Movement)}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{_character_types_8h_af76f1f4260f27f698f264beecbd387d9}{EActionState}}\ ActionState;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ Movement)}
+\DoxyCodeLine{00040\ \ \ \ \ TEnumAsByte<\mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeathPose}}>\ DeathPose;}
+\DoxyCodeLine{00041\ \};}
+
+\end{DoxyCode}

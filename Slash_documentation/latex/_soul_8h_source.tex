@@ -1,0 +1,43 @@
+\doxysection{Soul.\+h}
+\hypertarget{_soul_8h_source}{}\label{_soul_8h_source}\index{Public/Items/Soul.h@{Public/Items/Soul.h}}
+\mbox{\hyperlink{_soul_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_item_8h}{Items/Item.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Soul.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_soul}{ASoul}}\ :\ public\ \mbox{\hyperlink{class_a_item}{AItem}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ OnSphereOverlap(UPrimitiveComponent*\ OverlappedComponent,\ AActor*\ OtherActor,\ UPrimitiveComponent*\ OtherComp,\ int32\ OtherBodyIndex,\ \textcolor{keywordtype}{bool}\ bFromSweep,\ \textcolor{keyword}{const}\ FHitResult\&\ SweepResult)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}Soul\ Properties"{}})}
+\DoxyCodeLine{00025\ \ \ \ \ int32\ Souls;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ DesiredZ;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}Soul\ Properties"{}})}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ DriftRate\ =\ -\/15.f;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}Soul\ Properties"{}})}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{float}\ EndLocationOffset\ =\ 50;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}Soul\ Properties"{}})}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ bShowBoxDebug\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ FORCEINLINE\ int32\ \mbox{\hyperlink{class_a_soul_a7d8161bf7ed1bbfe315d1aef11857dfe}{GetSouls}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Souls;\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ FORCEINLINE\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_soul_aa69583215dfc59b092cd470f20b0c93c}{SetSouls}}(int32\ NumberofSouls)\ \{\ Souls\ =\ NumberofSouls;\ \}}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}

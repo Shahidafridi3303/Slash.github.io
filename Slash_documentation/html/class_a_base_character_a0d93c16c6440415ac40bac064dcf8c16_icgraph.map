@@ -1,0 +1,5 @@
+<map id="ABaseCharacter::GetDeathPose" name="ABaseCharacter::GetDeathPose">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,13,432,40"/>
+<area shape="rect" id="Node000002" href="$class_u_slash_anim_instance.html#ac8ec3dc059f89580d9b3a72cf4b10035" title=" " alt="" coords="5,5,173,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,29,173,29,173,24,205,24"/>
+</map>

@@ -1,0 +1,69 @@
+\doxysection{Attribute\+Component.\+h}
+\hypertarget{_attribute_component_8h_source}{}\label{_attribute_component_8h_source}\index{Public/Components/AttributeComponent.h@{Public/Components/AttributeComponent.h}}
+\mbox{\hyperlink{_attribute_component_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Components/ActorComponent.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}AttributeComponent.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ UCLASS(\ ClassGroup=(Custom),\ meta=(BlueprintableComponent)\ )}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }SLASH\_API\ UAttributeComponent\ :\ \textcolor{keyword}{public}\ UActorComponent}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ public:\ }
+\DoxyCodeLine{00015\ \ \ \ \ UAttributeComponent();}
+\DoxyCodeLine{00016\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ TickComponent(\textcolor{keywordtype}{float}\ DeltaTime,\ ELevelTick\ TickType,\ FActorComponentTickFunction*\ ThisTickFunction)\ override;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ RegenStamina(\textcolor{keywordtype}{float}\ DeltaTime);}
+\DoxyCodeLine{00018\ protected:}
+\DoxyCodeLine{00019\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ BeginPlay()\ override;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ private:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Current\ Health}}
+\DoxyCodeLine{00023\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ Health;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ MaxHealth;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Current\ Stamina}}
+\DoxyCodeLine{00030\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ Stamina;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{float}\ MaxStamina;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00037\ \ \ \ \ int32\ Gold;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00040\ \ \ \ \ int32\ Souls;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{float}\ DodgeCost\ =\ 14.f;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}Actor\ Attributes"{})}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{float}\ StaminaRegenRate\ =\ 8.f;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ public:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ ReceiveDamage(\textcolor{keywordtype}{float}\ Damage);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ AddHealth(\textcolor{keywordtype}{float}\ amount);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ UseStamina(\textcolor{keywordtype}{float}\ StaminaCost);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ GetHealth();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{float}\ GetHealthPercent();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{float}\ GetStaminaPercent();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsAlive();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ AddSouls(int32\ NumberOfSouls);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ AddGold(int32\ AmountOfGold);}
+\DoxyCodeLine{00058\ \ \ \ \ FORCEINLINE\ int32\ GetGold()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Gold;\ \}}
+\DoxyCodeLine{00059\ \ \ \ \ FORCEINLINE\ int32\ GetSouls()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Souls;\ \}}
+\DoxyCodeLine{00060\ \ \ \ \ FORCEINLINE\ \textcolor{keywordtype}{float}\ GetDodgeCost()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ DodgeCost;\ \}}
+\DoxyCodeLine{00061\ \ \ \ \ FORCEINLINE\ \textcolor{keywordtype}{float}\ GetStamina()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Stamina;\ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \};}
+
+\end{DoxyCode}

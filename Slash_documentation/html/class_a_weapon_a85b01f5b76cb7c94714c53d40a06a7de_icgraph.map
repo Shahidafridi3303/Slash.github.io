@@ -1,0 +1,15 @@
+<map id="AWeapon::AttachMeshToSocket" name="AWeapon::AttachMeshToSocket">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1027,80,1236,107"/>
+<area shape="rect" id="Node000002" href="$class_a_slash_character.html#a6af4c62942c9638ca59c9151a8ccf49f" title=" " alt="" coords="765,5,979,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1061,78,957,51,959,46,1062,73"/>
+<area shape="rect" id="Node000003" href="$class_a_slash_character.html#ac4f1dc2988decb2c96b2e7f7d55f485f" title=" " alt="" coords="765,72,979,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1011,96,979,96,979,91,1011,91"/>
+<area shape="rect" id="Node000004" href="$class_a_weapon.html#ad415900448969b98eebf669fc09c2c57" title=" " alt="" coords="813,139,931,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1055,113,932,141,930,136,1054,108"/>
+<area shape="rect" id="Node000005" href="$class_a_slash_character.html#ad06f82be28e6cfe49b57e9ddc1d5c398" title=" " alt="" coords="509,139,717,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="798,155,718,155,718,149,798,149"/>
+<area shape="rect" id="Node000006" href="$class_a_slash_character.html#a18de7c770d226cd61d498a016181f71e" title=" " alt="" coords="253,139,461,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="494,155,462,155,462,149,494,149"/>
+<area shape="rect" id="Node000007" href="$class_a_slash_character.html#a9a4e7ee18d2a1fe3cd2f7b3899a73d05" title=" " alt="" coords="5,131,205,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="237,155,205,155,205,149,237,149"/>
+</map>

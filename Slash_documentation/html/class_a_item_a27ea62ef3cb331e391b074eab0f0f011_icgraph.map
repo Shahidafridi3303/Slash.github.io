@@ -1,0 +1,7 @@
+<map id="AItem::SpawnPickupSound" name="AItem::SpawnPickupSound">
+<area shape="rect" id="Node000001" title=" " alt="" coords="245,31,426,57"/>
+<area shape="rect" id="Node000002" href="$class_a_soul.html#a641e8ef544c8f9be7d86a5998f9d2c8c" title=" " alt="" coords="17,5,185,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,35,185,30,186,25,229,30"/>
+<area shape="rect" id="Node000003" href="$class_a_treasure.html#a8a7a2edee4755648d0345993a0e13680" title=" " alt="" coords="5,56,197,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,58,197,62,197,56,229,53"/>
+</map>

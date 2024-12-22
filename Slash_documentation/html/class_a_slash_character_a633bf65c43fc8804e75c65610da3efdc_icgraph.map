@@ -1,0 +1,7 @@
+<map id="ASlashCharacter::CanAttack" name="ASlashCharacter::CanAttack">
+<area shape="rect" id="Node000001" title=" " alt="" coords="467,13,657,40"/>
+<area shape="rect" id="Node000002" href="$class_a_slash_character.html#a843fff397909c69e6e698f0403796bd3" title=" " alt="" coords="253,13,419,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="451,29,420,29,420,24,451,24"/>
+<area shape="rect" id="Node000003" href="$class_a_slash_character.html#a9a4e7ee18d2a1fe3cd2f7b3899a73d05" title=" " alt="" coords="5,5,205,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,29,205,29,205,24,237,24"/>
+</map>

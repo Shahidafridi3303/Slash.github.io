@@ -1,0 +1,131 @@
+\doxysection{Enemy.\+h}
+\hypertarget{_enemy_8h_source}{}\label{_enemy_8h_source}\index{Public/Enemy/Enemy.h@{Public/Enemy/Enemy.h}}
+\mbox{\hyperlink{_enemy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_base_character_8h}{Characters/BaseCharacter.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_types_8h}{Characters/CharacterTypes.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Enemy.generated.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_health_bar_component}{UHealthBarComponent}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }UPawnSensingComponent;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ UCLASS()}
+\DoxyCodeLine{00014\ class\ SLASH\_API\ \mbox{\hyperlink{class_a_enemy}{AEnemy}}\ :\ public\ \mbox{\hyperlink{class_a_base_character}{ABaseCharacter}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_a_enemy}{AEnemy}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ TakeDamage(\textcolor{keywordtype}{float}\ DamageAmount,\ \textcolor{keyword}{struct}\ FDamageEvent\ \textcolor{keyword}{const}\&\ DamageEvent,\ \textcolor{keyword}{class}\ AController*\ EventInstigator,\ AActor*\ DamageCauser)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Destroyed()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ GetHit\_Implementation(\textcolor{keyword}{const}\ FVector\&\ ImpactPoint,\ AActor*\ Hitter)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Die\_Implementation()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ SpawnSoul();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Attack()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ CanAttack()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ AttackEnd()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ HandleDamage(\textcolor{keywordtype}{float}\ DamageAmount)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ VisibleAnywhere)}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{_character_types_8h_aa610fff56c27064ca4b787487321b2bf}{EEnemyState}}\ EnemyState\ =\ \mbox{\hyperlink{_character_types_8h_aa610fff56c27064ca4b787487321b2bf}{EEnemyState}}::EES\_Patrolling;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ private:}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ InitializeEnemy();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckPatrolTarget();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ CheckCombatTarget();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ PatrolTimerFinished();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ HideHealthBar();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ ShowHealthBar();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ LoseInterest();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ StartPatrolling();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ ChaseTarget();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsOutsideCombatRadius();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsOutsideAttackRadius();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsInsideAttackRadius();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsChasing();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsAttacking();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsDead();}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsEngaged();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ ClearPatrolTimer();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ StartAttackTimer();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ ClearAttackTimer();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ InTargetRange(AActor*\ Target,\ \textcolor{keywordtype}{double}\ Radius);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ MoveToTarget(AActor*\ Target);}
+\DoxyCodeLine{00072\ \ \ \ \ AActor*\ ChoosePatrolTarget();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ SpawnDefaultWeapon();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ PawnSeen(APawn*\ SeenPawn);\ \textcolor{comment}{//\ Callback\ for\ OnPawnSeen\ in\ UPawnSensingComponent}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_u_health_bar_component}{UHealthBarComponent}}*\ HealthBarWidget;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00082\ \ \ \ \ UPawnSensingComponent*\ PawnSensing;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00085\ \ \ \ \ TSubclassOf<class\ \mbox{\hyperlink{class_a_weapon}{AWeapon}}>\ WeaponClass;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{double}\ CombatRadius\ =\ 500.f;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{double}\ AttackRadius\ =\ 150.f;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{double}\ AcceptanceRadius\ =\ 50.f;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00097\ \ \ \ \ class\ AAIController*\ EnemyController;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{comment}{//\ Current\ patrol\ target}}
+\DoxyCodeLine{00100\ \ \ \ \ UPROPERTY(EditInstanceOnly,\ Category\ =\ "{}AI\ Navigation"{})}
+\DoxyCodeLine{00101\ \ \ \ \ AActor*\ PatrolTarget;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ UPROPERTY(EditInstanceOnly,\ Category\ =\ "{}AI\ Navigation"{})}
+\DoxyCodeLine{00104\ \ \ \ \ TArray<AActor*>\ PatrolTargets;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ UPROPERTY(EditAnywhere)}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{double}\ PatrolRadius\ =\ 200.f;}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ FTimerHandle\ PatrolTimer;}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}AI\ Navigation"{})}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{float}\ PatrolWaitMin\ =\ 5.f;}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ "{}AI\ Navigation"{})}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{float}\ PatrolWaitMax\ =\ 10.f;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{float}\ PatrollingSpeed\ =\ 125.f;}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ FTimerHandle\ AttackTimer;}
+\DoxyCodeLine{00121\ \ \ \ \ }
+\DoxyCodeLine{00122\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{float}\ AttackMin\ =\ 0.5f;}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{float}\ AttackMax\ =\ 1.f;}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{float}\ ChasingSpeed\ =\ 300.f;}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{float}\ DeathLifeSpan\ =\ 8.f;}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ Combat)}
+\DoxyCodeLine{00135\ \ \ \ \ TSubclassOf<class\ \mbox{\hyperlink{class_a_soul}{ASoul}}>\ SoulClass;}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \};}
+
+\end{DoxyCode}

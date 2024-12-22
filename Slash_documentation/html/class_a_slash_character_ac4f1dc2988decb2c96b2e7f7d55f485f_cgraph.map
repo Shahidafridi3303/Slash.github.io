@@ -1,0 +1,5 @@
+<map id="ASlashCharacter::AttachWeaponToHand" name="ASlashCharacter::AttachWeaponToHand">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,219,48"/>
+<area shape="rect" id="Node000002" href="$class_a_weapon.html#a85b01f5b76cb7c94714c53d40a06a7de" title=" " alt="" coords="267,13,476,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,24,251,24,251,29,219,29"/>
+</map>

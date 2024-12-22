@@ -1,0 +1,51 @@
+\doxysection{Character\+Types.\+h}
+\hypertarget{_character_types_8h_source}{}\label{_character_types_8h_source}\index{Public/Characters/CharacterTypes.h@{Public/Characters/CharacterTypes.h}}
+\mbox{\hyperlink{_character_types_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ UENUM(BlueprintType)}
+\DoxyCodeLine{00004\ enum\ class\ \mbox{\hyperlink{_character_types_8h_a1eee02477e4d3ad60fece0fbf612fdd5}{ECharacterState}}\ :\ uint8}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ ECS\_Unequipped\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Unequipped"{}}),}
+\DoxyCodeLine{00007\ \ \ \ \ ECS\_EquippedOneHandedWeapon\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}EQuipped\ One-\/handed\ Weapon"{}}),}
+\DoxyCodeLine{00008\ \ \ \ \ ECS\_EquippedTwoHandedWeapon\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}EQuipped\ Two-\/handed\ Weapon"{}})}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ UENUM(BlueprintType)}
+\DoxyCodeLine{00012\ enum\ class\ \mbox{\hyperlink{_character_types_8h_af76f1f4260f27f698f264beecbd387d9}{EActionState}}\ :\ uint8}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ EAS\_Unoccupied\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Unoccupied"{}}),}
+\DoxyCodeLine{00015\ \ \ \ \ EAS\_HitReaction\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}HitReaction"{}}),}
+\DoxyCodeLine{00016\ \ \ \ \ EAS\_Attacking\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Attacking"{}}),}
+\DoxyCodeLine{00017\ \ \ \ \ EAS\_EquippingWeapon\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Equipping\ Weapon"{}}),}
+\DoxyCodeLine{00018\ \ \ \ \ EAS\_Dodge\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Dodge"{}}),}
+\DoxyCodeLine{00019\ \ \ \ \ EAS\_Dead\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Dead"{}})}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ UENUM(BlueprintType)}
+\DoxyCodeLine{00023\ enum\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4}{EDeathPose}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ EDA\_Death1\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Death1"{}}),}
+\DoxyCodeLine{00026\ \ \ \ \ EDA\_Death2\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Death2"{}}),}
+\DoxyCodeLine{00027\ \ \ \ \ EDA\_Death3\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Death3"{}}),}
+\DoxyCodeLine{00028\ \ \ \ \ EDA\_Death4\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Death4"{}}),}
+\DoxyCodeLine{00029\ \ \ \ \ EDA\_Death5\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Death5"{}}),}
+\DoxyCodeLine{00030\ \ \ \ \ EDA\_Death6\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Death6"{}}),}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ EDA\_MAX\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}DefaultMAX"{}})}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ UENUM(BlueprintType)}
+\DoxyCodeLine{00036\ enum\ class\ \mbox{\hyperlink{_character_types_8h_aa610fff56c27064ca4b787487321b2bf}{EEnemyState}}\ :\ uint8}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ EES\_NoState\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}NoState"{}}),}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ EES\_Dead\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Dead"{}}),}
+\DoxyCodeLine{00041\ \ \ \ \ EES\_Patrolling\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Patrolling"{}}),}
+\DoxyCodeLine{00042\ \ \ \ \ EES\_Chasing\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Chasing"{}}),}
+\DoxyCodeLine{00043\ \ \ \ \ EES\_Attacking\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Attacking"{}}),}
+\DoxyCodeLine{00044\ \ \ \ \ EES\_Engaged\ \mbox{\hyperlink{_character_types_8h_a5eb48b6350d4131a960e3a1d2bbe2fe4a5fd3d6f02c1dc582f80e2af875af4561}{UMETA}}(Displayname\ =\ \textcolor{stringliteral}{"{}Engaged"{}})}
+\DoxyCodeLine{00045\ \};}
+
+\end{DoxyCode}
